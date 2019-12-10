@@ -2,15 +2,140 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks on Wouter Kool</title>
-    <link>https:///wouterkool.github.io/talk/</link>
+    <link>https://wouterkool.github.io/talk/</link>
     <description>Recent content in Recent &amp; Upcoming Talks on Wouter Kool</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2019 13:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https:///wouterkool.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://wouterkool.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monte Carlo Tree Search &amp; AlphaGo (Zero)</title>
+      <link>https://wouterkool.github.io/talk/2019-10-11_mcts_alphago/</link>
+      <pubDate>Fri, 11 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-10-11_mcts_alphago/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning &#43; Operations Research</title>
+      <link>https://wouterkool.github.io/talk/2019-07-04_delft_ai_ml_or/</link>
+      <pubDate>Thu, 04 Jul 2019 16:45:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-07-04_delft_ai_ml_or/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Beams and Where to Find Them</title>
+      <link>https://wouterkool.github.io/talk/2019-06-13_icml_stochastic_beam_search/</link>
+      <pubDate>Thu, 13 Jun 2019 11:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-06-13_icml_stochastic_beam_search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Beams and Where to Find Them</title>
+      <link>https://wouterkool.github.io/talk/2019-06-06_amlab_seminar_stochastic_beams/</link>
+      <pubDate>Thu, 06 Jun 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-06-06_amlab_seminar_stochastic_beams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life after graduation</title>
+      <link>https://wouterkool.github.io/talk/2019-06-05_life_after_graduation/</link>
+      <pubDate>Wed, 05 Jun 2019 19:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-06-05_life_after_graduation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Buy 4 REINFORCE Samples, Get a Baseline for Free!</title>
+      <link>https://wouterkool.github.io/talk/2019-05-06_iclr_workshop_buy/</link>
+      <pubDate>Mon, 06 May 2019 12:45:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-05-06_iclr_workshop_buy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numeric Stability</title>
+      <link>https://wouterkool.github.io/talk/2019-05-03_amlab_lunch_numeric_stability/</link>
+      <pubDate>Fri, 03 May 2019 12:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-05-03_amlab_lunch_numeric_stability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to solve Routing Problems with Deep Reinforcement Learning</title>
+      <link>https://wouterkool.github.io/talk/2019-04-18_utrecht_data_science/</link>
+      <pubDate>Thu, 18 Apr 2019 19:40:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-04-18_utrecht_data_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning for routing problems</title>
+      <link>https://wouterkool.github.io/talk/2019-03-22_ns/</link>
+      <pubDate>Fri, 22 Mar 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-03-22_ns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention, Learn to Solve Routing Problems!</title>
+      <link>https://wouterkool.github.io/talk/2019-03-11_bologna/</link>
+      <pubDate>Mon, 11 Mar 2019 16:15:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-03-11_bologna/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Reinforcement Learning for Logistics Problems</title>
+      <link>https://wouterkool.github.io/talk/2019-01-08_qualcomm_symposium/</link>
+      <pubDate>Tue, 08 Jan 2019 13:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-01-08_qualcomm_symposium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monte Carlo Tree Search &amp; AlphaGo (Zero)</title>
+      <link>https://wouterkool.github.io/talk/2018-12-04_mcts_alphago/</link>
+      <pubDate>Tue, 04 Dec 2018 15:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2018-12-04_mcts_alphago/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention Solves Your TSP, Approximately</title>
+      <link>https://wouterkool.github.io/talk/2018-11-19_benerl/</link>
+      <pubDate>Mon, 19 Nov 2018 13:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2018-11-19_benerl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention Solves Your TSP</title>
+      <link>https://wouterkool.github.io/talk/2018-03-28_amlab_seminar/</link>
+      <pubDate>Wed, 28 Mar 2018 16:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2018-03-28_amlab_seminar/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

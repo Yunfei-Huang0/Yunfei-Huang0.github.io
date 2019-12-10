@@ -1,57 +1,221 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wouter Kool on Wouter Kool</title>
-    <link>https:///wouterkool.github.io/</link>
-    <description>Recent content in Wouter Kool on Wouter Kool</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Wouter Kool</title>
+    <link>https://wouterkool.github.io/</link>
+    <description>Recent content on Wouter Kool</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/wouterkool.github.io/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0100</lastBuildDate>
+    
+	    <atom:link href="https://wouterkool.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>SET Finder App</title>
-      <link>https:///wouterkool.github.io/project/set-finder/</link>
-      <pubDate>Fri, 23 Mar 2018 17:26:41 +0100</pubDate>
+      <title>Estimating Gradients for Discrete Random Variables by Sampling without Replacement</title>
+      <link>https://wouterkool.github.io/publication/estimating-gradients-without-replacement/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/project/set-finder/</guid>
+      <guid>https://wouterkool.github.io/publication/estimating-gradients-without-replacement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monte Carlo Tree Search &amp; AlphaGo (Zero)</title>
+      <link>https://wouterkool.github.io/talk/2019-10-11_mcts_alphago/</link>
+      <pubDate>Fri, 11 Oct 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-10-11_mcts_alphago/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning &#43; Operations Research</title>
+      <link>https://wouterkool.github.io/talk/2019-07-04_delft_ai_ml_or/</link>
+      <pubDate>Thu, 04 Jul 2019 16:45:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-07-04_delft_ai_ml_or/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Beams and Where to Find Them</title>
+      <link>https://wouterkool.github.io/talk/2019-06-13_icml_stochastic_beam_search/</link>
+      <pubDate>Thu, 13 Jun 2019 11:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-06-13_icml_stochastic_beam_search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Beams and Where to Find Them</title>
+      <link>https://wouterkool.github.io/talk/2019-06-06_amlab_seminar_stochastic_beams/</link>
+      <pubDate>Thu, 06 Jun 2019 16:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-06-06_amlab_seminar_stochastic_beams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life after graduation</title>
+      <link>https://wouterkool.github.io/talk/2019-06-05_life_after_graduation/</link>
+      <pubDate>Wed, 05 Jun 2019 19:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-06-05_life_after_graduation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Beams and Where to Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement</title>
+      <link>https://wouterkool.github.io/publication/stochastic-beam-search/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/stochastic-beam-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Buy 4 REINFORCE Samples, Get a Baseline for Free!</title>
+      <link>https://wouterkool.github.io/talk/2019-05-06_iclr_workshop_buy/</link>
+      <pubDate>Mon, 06 May 2019 12:45:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-05-06_iclr_workshop_buy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numeric Stability</title>
+      <link>https://wouterkool.github.io/talk/2019-05-03_amlab_lunch_numeric_stability/</link>
+      <pubDate>Fri, 03 May 2019 12:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-05-03_amlab_lunch_numeric_stability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Buy 4 REINFORCE Samples, Get a Baseline for Free!</title>
+      <link>https://wouterkool.github.io/publication/buy-4-samples-free-baseline/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/buy-4-samples-free-baseline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interview with &#39;De Dataloog&#39; (Dutch Podcast on Data and Machine Learning)</title>
+      <link>https://wouterkool.github.io/post/dataloog/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/post/dataloog/</guid>
+      <description>&lt;p&gt;I talked to De Dataloog about applying Machine Learning to Operations Research problems. Listen to the interview &lt;a href=&#34;https://www.dedataloog.nl/uitzending/dtl020-machine-learning-algoritmes-voor-operations-research/&#34;&gt;here&lt;/a&gt; (Dutch only).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning to solve Routing Problems with Deep Reinforcement Learning</title>
+      <link>https://wouterkool.github.io/talk/2019-04-18_utrecht_data_science/</link>
+      <pubDate>Thu, 18 Apr 2019 19:40:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-04-18_utrecht_data_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning for routing problems</title>
+      <link>https://wouterkool.github.io/talk/2019-03-22_ns/</link>
+      <pubDate>Fri, 22 Mar 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-03-22_ns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention, Learn to Solve Routing Problems!</title>
+      <link>https://wouterkool.github.io/talk/2019-03-11_bologna/</link>
+      <pubDate>Mon, 11 Mar 2019 16:15:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-03-11_bologna/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention, Learn to Solve Routing Problems!</title>
+      <link>https://wouterkool.github.io/publication/attention-learn-to-route/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/attention-learn-to-route/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Reinforcement Learning for Logistics Problems</title>
+      <link>https://wouterkool.github.io/talk/2019-01-08_qualcomm_symposium/</link>
+      <pubDate>Tue, 08 Jan 2019 13:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-01-08_qualcomm_symposium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monte Carlo Tree Search &amp; AlphaGo (Zero)</title>
+      <link>https://wouterkool.github.io/talk/2018-12-04_mcts_alphago/</link>
+      <pubDate>Tue, 04 Dec 2018 15:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2018-12-04_mcts_alphago/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention Solves Your TSP, Approximately</title>
+      <link>https://wouterkool.github.io/talk/2018-11-19_benerl/</link>
+      <pubDate>Mon, 19 Nov 2018 13:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2018-11-19_benerl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Attention Solves Your TSP</title>
-      <link>https:///wouterkool.github.io/publication/attention-tsp/</link>
-      <pubDate>Fri, 23 Mar 2018 16:52:55 +0100</pubDate>
+      <link>https://wouterkool.github.io/talk/2018-03-28_amlab_seminar/</link>
+      <pubDate>Wed, 28 Mar 2018 16:00:00 +0000</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/attention-tsp/</guid>
+      <guid>https://wouterkool.github.io/talk/2018-03-28_amlab_seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SET Finder</title>
+      <link>https://wouterkool.github.io/project/set-finder/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/project/set-finder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimization of Two-Phase Methods using Simple Feedback Mechanisms</title>
-      <link>https:///wouterkool.github.io/publication/optimization-using-simple-feedback/</link>
+      <link>https://wouterkool.github.io/publication/optimization-using-simple-feedback/</link>
       <pubDate>Mon, 01 Dec 2014 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/optimization-using-simple-feedback/</guid>
+      <guid>https://wouterkool.github.io/publication/optimization-using-simple-feedback/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ORTEC Pallet and Load Building</title>
-      <link>https:///wouterkool.github.io/publication/ortec-load-building/</link>
+      <link>https://wouterkool.github.io/publication/ortec-load-building/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/ortec-load-building/</guid>
+      <guid>https://wouterkool.github.io/publication/ortec-load-building/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automation of the SET Card Game</title>
-      <link>https:///wouterkool.github.io/publication/automation-set/</link>
+      <link>https://wouterkool.github.io/publication/automation-set/</link>
       <pubDate>Sun, 01 Dec 2013 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/automation-set/</guid>
+      <guid>https://wouterkool.github.io/publication/automation-set/</guid>
       <description></description>
     </item>
     
