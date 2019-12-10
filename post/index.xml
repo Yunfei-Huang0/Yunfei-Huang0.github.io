@@ -2,15 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Wouter Kool</title>
-    <link>https:///wouterkool.github.io/post/</link>
+    <link>https://wouterkool.github.io/post/</link>
     <description>Recent content in Posts on Wouter Kool</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https:///wouterkool.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://wouterkool.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Interview with &#39;De Dataloog&#39; (Dutch Podcast on Data and Machine Learning)</title>
+      <link>https://wouterkool.github.io/post/dataloog/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/post/dataloog/</guid>
+      <description>&lt;p&gt;I talked to De Dataloog about applying Machine Learning to Operations Research problems. Listen to the interview &lt;a href=&#34;https://www.dedataloog.nl/uitzending/dtl020-machine-learning-algoritmes-voor-operations-research/&#34;&gt;here&lt;/a&gt; (Dutch only).&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

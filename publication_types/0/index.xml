@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 on Wouter Kool</title>
+    <link>https://wouterkool.github.io/publication_types/0/</link>
+    <description>Recent content in 0 on Wouter Kool</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Dec 2014 00:00:00 +0100</lastBuildDate>
+    
+	    <atom:link href="https://wouterkool.github.io/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optimization of Two-Phase Methods using Simple Feedback Mechanisms</title>
+      <link>https://wouterkool.github.io/publication/optimization-using-simple-feedback/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/optimization-using-simple-feedback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ORTEC Pallet and Load Building</title>
+      <link>https://wouterkool.github.io/publication/ortec-load-building/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/ortec-load-building/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation of the SET Card Game</title>
+      <link>https://wouterkool.github.io/publication/automation-set/</link>
+      <pubDate>Sun, 01 Dec 2013 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/automation-set/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

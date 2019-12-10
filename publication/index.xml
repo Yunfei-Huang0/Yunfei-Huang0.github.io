@@ -2,49 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Wouter Kool</title>
-    <link>https:///wouterkool.github.io/publication/</link>
+    <link>https://wouterkool.github.io/publication/</link>
     <description>Recent content in Publications on Wouter Kool</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https:///wouterkool.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://wouterkool.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Attention Solves Your TSP</title>
-      <link>https:///wouterkool.github.io/publication/attention-tsp/</link>
-      <pubDate>Fri, 23 Mar 2018 16:52:55 +0100</pubDate>
+      <title>Estimating Gradients for Discrete Random Variables by Sampling without Replacement</title>
+      <link>https://wouterkool.github.io/publication/estimating-gradients-without-replacement/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/attention-tsp/</guid>
+      <guid>https://wouterkool.github.io/publication/estimating-gradients-without-replacement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Beams and Where to Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement</title>
+      <link>https://wouterkool.github.io/publication/stochastic-beam-search/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/stochastic-beam-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Buy 4 REINFORCE Samples, Get a Baseline for Free!</title>
+      <link>https://wouterkool.github.io/publication/buy-4-samples-free-baseline/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/buy-4-samples-free-baseline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention, Learn to Solve Routing Problems!</title>
+      <link>https://wouterkool.github.io/publication/attention-learn-to-route/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/attention-learn-to-route/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimization of Two-Phase Methods using Simple Feedback Mechanisms</title>
-      <link>https:///wouterkool.github.io/publication/optimization-using-simple-feedback/</link>
+      <link>https://wouterkool.github.io/publication/optimization-using-simple-feedback/</link>
       <pubDate>Mon, 01 Dec 2014 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/optimization-using-simple-feedback/</guid>
+      <guid>https://wouterkool.github.io/publication/optimization-using-simple-feedback/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ORTEC Pallet and Load Building</title>
-      <link>https:///wouterkool.github.io/publication/ortec-load-building/</link>
+      <link>https://wouterkool.github.io/publication/ortec-load-building/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/ortec-load-building/</guid>
+      <guid>https://wouterkool.github.io/publication/ortec-load-building/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automation of the SET Card Game</title>
-      <link>https:///wouterkool.github.io/publication/automation-set/</link>
+      <link>https://wouterkool.github.io/publication/automation-set/</link>
       <pubDate>Sun, 01 Dec 2013 00:00:00 +0100</pubDate>
       
-      <guid>https:///wouterkool.github.io/publication/automation-set/</guid>
+      <guid>https://wouterkool.github.io/publication/automation-set/</guid>
       <description></description>
     </item>
     
