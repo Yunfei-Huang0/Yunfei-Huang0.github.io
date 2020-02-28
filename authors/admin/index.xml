@@ -10,17 +10,5 @@
 	    <atom:link href="https://wouterkool.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title></title>
-      <link>https://wouterkool.github.io/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://wouterkool.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;&lt;em&gt;I want to make things better. In other words, I optimize.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Currently, I am a third year PhD student at the &lt;a href=&#34;http://amlab.science.uva.nl/&#34; target=&#34;_blank&#34;&gt;Amsterdam Machine Learning Lab (AMLab)&lt;/a&gt;, supervised by &lt;a href=&#34;https://staff.fnwi.uva.nl/h.c.vanhoof&#34; target=&#34;_blank&#34;&gt;Herke van Hoof&lt;/a&gt; and &lt;a href=&#34;https://staff.fnwi.uva.nl/m.welling/&#34; target=&#34;_blank&#34;&gt;Max Welling&lt;/a&gt;. My research focuses on using (Deep) Reinforcement Learning to learn algorithms capable of solving discrete optimization problems.&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
