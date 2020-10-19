@@ -6,10 +6,46 @@
     <description>Recent content in Recent &amp; Upcoming Talks on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Oct 2019 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2020 16:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gumbel Mathemagic</title>
+      <link>https://wouterkool.github.io/talk/2020-10-15_amlab_seminar_gumbel_mathemagic/</link>
+      <pubDate>Thu, 15 Oct 2020 16:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2020-10-15_amlab_seminar_gumbel_mathemagic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention, Learn to Solve Routing Problems!</title>
+      <link>https://wouterkool.github.io/talk/2020-06-09_tue_rl_seminar/</link>
+      <pubDate>Tue, 09 Jun 2020 16:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2020-06-09_tue_rl_seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimating Gradients for Discrete Distributions</title>
+      <link>https://wouterkool.github.io/talk/2020-04-26_iclr_estimating_gradients/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2020-04-26_iclr_estimating_gradients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MNISET dataset</title>
+      <link>https://wouterkool.github.io/talk/2020-03-06_amlab_lunch_mniset/</link>
+      <pubDate>Fri, 06 Mar 2020 12:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2020-03-06_amlab_lunch_mniset/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Monte Carlo Tree Search &amp; AlphaGo (Zero)</title>
