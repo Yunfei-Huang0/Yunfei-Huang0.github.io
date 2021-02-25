@@ -6,7 +6,7 @@
     <description>Recent content in Authors on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0100</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,16 +14,25 @@
     <item>
       <title>Herke van Hoof</title>
       <link>https://wouterkool.github.io/authors/herke-van-hoof/</link>
-      <pubDate>Sun, 01 Nov 2020 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0100</pubDate>
       
       <guid>https://wouterkool.github.io/authors/herke-van-hoof/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Joaquim Gromicho</title>
+      <link>https://wouterkool.github.io/authors/joaquim-gromicho/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/authors/joaquim-gromicho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Max Welling</title>
       <link>https://wouterkool.github.io/authors/max-welling/</link>
-      <pubDate>Sun, 01 Nov 2020 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0100</pubDate>
       
       <guid>https://wouterkool.github.io/authors/max-welling/</guid>
       <description></description>
@@ -32,7 +41,7 @@
     <item>
       <title>Wouter Kool</title>
       <link>https://wouterkool.github.io/authors/wouter-kool/</link>
-      <pubDate>Sun, 01 Nov 2020 00:00:00 +0100</pubDate>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0100</pubDate>
       
       <guid>https://wouterkool.github.io/authors/wouter-kool/</guid>
       <description></description>
@@ -45,7 +54,7 @@
       
       <guid>https://wouterkool.github.io/authors/admin/</guid>
       <description>&lt;p&gt;&lt;em&gt;I want to make things better. In other words, I optimize.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Currently, I am a third year PhD student at the &lt;a href=&#34;http://amlab.science.uva.nl/&#34;&gt;Amsterdam Machine Learning Lab (AMLab)&lt;/a&gt;, supervised by &lt;a href=&#34;https://staff.fnwi.uva.nl/h.c.vanhoof&#34;&gt;Herke van Hoof&lt;/a&gt; and &lt;a href=&#34;https://staff.fnwi.uva.nl/m.welling/&#34;&gt;Max Welling&lt;/a&gt;. My research focuses on using (Deep) Reinforcement Learning to learn algorithms capable of solving discrete optimization problems.&lt;/p&gt;
+&lt;p&gt;Currently, I am a fourth year PhD student at the &lt;a href=&#34;http://amlab.science.uva.nl/&#34;&gt;Amsterdam Machine Learning Lab (AMLab)&lt;/a&gt;, supervised by &lt;a href=&#34;https://staff.fnwi.uva.nl/h.c.vanhoof&#34;&gt;Herke van Hoof&lt;/a&gt; and &lt;a href=&#34;https://staff.fnwi.uva.nl/m.welling/&#34;&gt;Max Welling&lt;/a&gt;. My research focuses on using (Deep) Reinforcement Learning to learn algorithms capable of solving discrete optimization problems.&lt;/p&gt;
 </description>
     </item>
     
