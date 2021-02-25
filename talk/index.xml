@@ -6,10 +6,19 @@
     <description>Recent content in Recent &amp; Upcoming Talks on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2020 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Feb 2021 20:25:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Learning for Combinatorial Optimization: count your flops and make your flops count!</title>
+      <link>https://wouterkool.github.io/talk/2021-02-24_ipam_ml_co/</link>
+      <pubDate>Wed, 24 Feb 2021 20:25:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2021-02-24_ipam_ml_co/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gumbel Mathemagic</title>
