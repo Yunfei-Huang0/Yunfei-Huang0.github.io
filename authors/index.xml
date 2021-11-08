@@ -6,10 +6,64 @@
     <description>Recent content in Authors on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0100</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Andriy Mnih</title>
+      <link>https://wouterkool.github.io/authors/andriy-mnih/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/authors/andriy-mnih/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chris J. Maddison</title>
+      <link>https://wouterkool.github.io/authors/chris-j.-maddison/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/authors/chris-j.-maddison/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wouter Kool</title>
+      <link>https://wouterkool.github.io/authors/wouter-kool/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/authors/wouter-kool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iris A.M. Huijben</title>
+      <link>https://wouterkool.github.io/authors/iris-a.m.-huijben/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/authors/iris-a.m.-huijben/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Max B. Paulus</title>
+      <link>https://wouterkool.github.io/authors/max-b.-paulus/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/authors/max-b.-paulus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruud J.G. van Sloun</title>
+      <link>https://wouterkool.github.io/authors/ruud-j.g.-van-sloun/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/authors/ruud-j.g.-van-sloun/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Herke van Hoof</title>
@@ -39,22 +93,13 @@
     </item>
     
     <item>
-      <title>Wouter Kool</title>
-      <link>https://wouterkool.github.io/authors/wouter-kool/</link>
-      <pubDate>Wed, 24 Feb 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://wouterkool.github.io/authors/wouter-kool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://wouterkool.github.io/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wouterkool.github.io/authors/admin/</guid>
       <description>&lt;p&gt;&lt;em&gt;I want to make things better. In other words, I optimize.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Currently, I am a fourth year PhD student at the &lt;a href=&#34;http://amlab.science.uva.nl/&#34;&gt;Amsterdam Machine Learning Lab (AMLab)&lt;/a&gt;, supervised by &lt;a href=&#34;https://staff.fnwi.uva.nl/h.c.vanhoof&#34;&gt;Herke van Hoof&lt;/a&gt; and &lt;a href=&#34;https://staff.fnwi.uva.nl/m.welling/&#34;&gt;Max Welling&lt;/a&gt;. My research focuses on using (Deep) Reinforcement Learning to learn algorithms capable of solving discrete optimization problems.&lt;/p&gt;
+&lt;p&gt;Currently, I am a last year PhD student at the &lt;a href=&#34;http://amlab.science.uva.nl/&#34;&gt;Amsterdam Machine Learning Lab (AMLab)&lt;/a&gt;, supervised by &lt;a href=&#34;https://staff.fnwi.uva.nl/h.c.vanhoof&#34;&gt;Herke van Hoof&lt;/a&gt; and &lt;a href=&#34;https://staff.fnwi.uva.nl/m.welling/&#34;&gt;Max Welling&lt;/a&gt;. My research focuses on using (Deep) Reinforcement Learning to learn algorithms capable of solving discrete optimization problems.&lt;/p&gt;
 </description>
     </item>
     

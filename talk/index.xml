@@ -6,10 +6,28 @@
     <description>Recent content in Recent &amp; Upcoming Talks on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Mar 2021 14:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Dec 2021 14:30:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unbiased Gradient Estimation with Balanced Assignments for Mixtures of Experts</title>
+      <link>https://wouterkool.github.io/talk/2021-12-13_icbinb_balanced_assignment/</link>
+      <pubDate>Mon, 13 Dec 2021 14:30:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2021-12-13_icbinb_balanced_assignment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to Solve Routing Problems</title>
+      <link>https://wouterkool.github.io/talk/2021-11-03_mainz/</link>
+      <pubDate>Wed, 03 Nov 2021 17:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2021-11-03_mainz/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Learning to Solve Routing Problems</title>
