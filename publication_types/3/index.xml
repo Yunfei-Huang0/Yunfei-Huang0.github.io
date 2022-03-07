@@ -20,23 +20,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>A Review of the Gumbel-max Trick and its Extensions for Discrete Stochasticity in Machine Learning</title>
-      <link>https://wouterkool.github.io/publication/gumbel-review/</link>
-      <pubDate>Mon, 04 Oct 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://wouterkool.github.io/publication/gumbel-review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Policy Dynamic Programming for Vehicle Routing Problems</title>
-      <link>https://wouterkool.github.io/publication/deep-policy-dynamic-programming/</link>
-      <pubDate>Wed, 24 Feb 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://wouterkool.github.io/publication/deep-policy-dynamic-programming/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

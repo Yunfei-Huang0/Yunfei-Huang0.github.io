@@ -6,10 +6,19 @@
     <description>Recent content in 1 on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0100</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Policy Dynamic Programming for Vehicle Routing Problems</title>
+      <link>https://wouterkool.github.io/publication/deep-policy-dynamic-programming/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/deep-policy-dynamic-programming/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Estimating Gradients for Discrete Random Variables by Sampling without Replacement</title>

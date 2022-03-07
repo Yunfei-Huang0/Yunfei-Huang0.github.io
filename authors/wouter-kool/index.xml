@@ -6,10 +6,28 @@
     <description>Recent content on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0100</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/authors/wouter-kool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Review of the Gumbel-max Trick and its Extensions for Discrete Stochasticity in Machine Learning</title>
+      <link>https://wouterkool.github.io/publication/gumbel-review/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/gumbel-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Genetic Search for the Vehicle Routing Problem with Time Windows: a High-Performance Implementation</title>
+      <link>https://wouterkool.github.io/publication/hgs-vrptw/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/hgs-vrptw/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Unbiased Gradient Estimation with Balanced Assignments for Mixtures of Experts</title>
@@ -17,15 +35,6 @@
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0100</pubDate>
       
       <guid>https://wouterkool.github.io/publication/balanced-assignment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Review of the Gumbel-max Trick and its Extensions for Discrete Stochasticity in Machine Learning</title>
-      <link>https://wouterkool.github.io/publication/gumbel-review/</link>
-      <pubDate>Mon, 04 Oct 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://wouterkool.github.io/publication/gumbel-review/</guid>
       <description></description>
     </item>
     
