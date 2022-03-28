@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Deep Learning Researcher/A Postdoc.
+subtitle: A Postdoc / Deep Learning Researcher
 
 profile:
   align: right
@@ -11,7 +11,7 @@ profile:
     <p>Max-Planck-Straße 1</p>
     <p>21502 Geesthacht</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
