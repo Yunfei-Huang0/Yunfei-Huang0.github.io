@@ -7,9 +7,7 @@ subtitle: A Postdoc / Deep Learning Researcher
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p>Max-Planck-Straße 1</p>
-    <p>21502 Geesthacht</p>
+  address: 
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
