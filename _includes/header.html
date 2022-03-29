@@ -81,33 +81,13 @@
               <!-- Toogle theme mode -->
               <div class = "toggle-container">
                 <a id = "light-toggle">
-                  <i class="fas fa-sun"></i>
                   <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
                 </a>
               </div>
               {%- endif %}
             </ul>
           </div>
-       </div>
+        </div>
       </nav>
-
-    <!-- Scrolling Progress Bar -->
-    <div class="progress-container fixed-top">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-
-    <!-- Reading progress bar -->
-
-    <!-- Javascript for Progress Bar -->
-    <script type="text/javascript">
-      window.onscroll = function() {myFunction()};
-
-      function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-      }
-    </script>
-      
     </header>
