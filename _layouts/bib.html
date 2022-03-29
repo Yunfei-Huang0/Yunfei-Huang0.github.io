@@ -3,7 +3,7 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr">
-
+        
         {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
         <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
@@ -14,7 +14,7 @@
 
         <div class="teaser">
         {%- if entry.image -%}
-        {% include figure.html path=entry.image class="img-fluid z-depth-1" zoomable=true %}
+        {% include figure.html path=entry.image class="img-fluid rounded z-depth-1" zoomable=true %}
         {%- endif -%}
         </div>
 
@@ -45,7 +45,7 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
-
+            
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
                 <em>{{author.last}}, {{author.first}}</em>
@@ -95,7 +95,7 @@
             {{ periodical | strip }}
           </div>
         {%- endif %}
-
+        
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.tldr %}
