@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: default
 title: blog
 pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 3
+  per_page: 20
   sort_field: date
   sort_reverse: true
   trail:
@@ -15,10 +15,10 @@ pagination:
 
 <div class="post">
 
-  <div class="header-bar">
+  <!-- <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
-  </div>
+  </div> -->
 
 
   <ul class="post-list">
@@ -30,12 +30,7 @@ pagination:
     {% assign categories = post.categories | join: "" %}
 
     <li>
-      <h3>
-        {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% else %}
-        <a class="post-title" href="{% if post.redirect contains '://' %}{{ post.redirect }}{% else %}{{ post.redirect | relative_url }}{% endif %}">{{ post.title }}</a>
-        {% endif %}
+      <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta"> {{read_time}} min read &nbsp; &middot; &nbsp;

@@ -32,7 +32,7 @@ blockquote {
   border-left: 2px solid var(--global-theme-color);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 // Math
@@ -49,30 +49,6 @@ blockquote {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
-}
-
-// Card
-
-.card {
-  background-color: var(--global-card-bg-color);
-  
-  img {
-    width: 100%;
-  }
-
-  .card-title {
-    color: var(--global-text-color);
-  }
-
-  .card-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
-  }
 }
 
 // Citation
@@ -93,6 +69,12 @@ blockquote {
     p {
       display: inline-block;
       margin: 0;
+    }
+  }
+
+  .teaser{
+    @media screen and (max-width: 600px) {
+      display: none;
     }
   }
 }
@@ -373,6 +355,9 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
+    .card-title {
+      color: $black-color;
+    }
   }
 
   .card-item {
@@ -385,7 +370,7 @@ footer.sticky-bottom {
     }
   }
 
-  .grid-sizer, .grid-item {
+  .grid-item {
     width: 250px;
     margin-bottom: 10px;
   }
@@ -451,6 +436,11 @@ footer.sticky-bottom {
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
+        }
+        .teaser{
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
         }
       }
       .title {
@@ -587,4 +577,20 @@ html.transition *:after {
   color: var(--global-text-color-light);
   font-size: 0.875rem;
   padding-top: 0.25rem;
+}
+
+// Scroll Progress Bar
+
+.progress-container {
+  width: 100%;
+  height: .25rem;
+  background: var(--global-bg-color);
+  opacity: 0.9;
+}
+
+.progress-bar {
+  width: 0%;
+  height: .25rem;
+  background: var(--global-theme-color);
+  opacity: 0.9;
 }
