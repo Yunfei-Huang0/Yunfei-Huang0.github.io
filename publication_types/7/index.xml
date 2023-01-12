@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>7 on Wouter Kool</title>
+    <link>https://wouterkool.github.io/publication_types/7/</link>
+    <description>Recent content in 7 on Wouter Kool</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Nov 2022 00:00:00 +0100</lastBuildDate>
+    
+	    <atom:link href="https://wouterkool.github.io/publication_types/7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning and Optimization in Combinatorial Spaces with a Focus on Deep Learning for Vehicle Routing</title>
+      <link>https://wouterkool.github.io/publication/learning-and-optimization-in-combinatorial-spaces/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/learning-and-optimization-in-combinatorial-spaces/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,19 @@
     <description>Recent content on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 23 Nov 2022 00:00:00 +0100</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/authors/wouter-kool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning and Optimization in Combinatorial Spaces with a Focus on Deep Learning for Vehicle Routing</title>
+      <link>https://wouterkool.github.io/publication/learning-and-optimization-in-combinatorial-spaces/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/learning-and-optimization-in-combinatorial-spaces/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Deep Policy Dynamic Programming for Vehicle Routing Problems</title>
