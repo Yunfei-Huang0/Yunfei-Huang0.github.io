@@ -1,15 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Wouter Kool</title>
+    <title>Talks on Wouter Kool</title>
     <link>https://wouterkool.github.io/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Wouter Kool</description>
+    <description>Recent content in Talks on Wouter Kool</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Dec 2021 14:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Dec 2022 13:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://wouterkool.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The EURO Meets NeurIPS 2022 Vehicle Routing Competition</title>
+      <link>https://wouterkool.github.io/talk/2023-12-07_euro_meets_neurips/</link>
+      <pubDate>Wed, 07 Dec 2022 13:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2023-12-07_euro_meets_neurips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PhD defence (layman&#39;s talk)</title>
+      <link>https://wouterkool.github.io/talk/2022-11-23_phd_defence/</link>
+      <pubDate>Wed, 23 Nov 2022 11:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2022-11-23_phd_defence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lectures on ML &amp; optimization and solving vehicle routing problems</title>
+      <link>https://wouterkool.github.io/talk/2022-10-10_siks/</link>
+      <pubDate>Mon, 10 Oct 2022 09:45:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2022-10-10_siks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Policy Dynamic Programming</title>
+      <link>https://wouterkool.github.io/talk/2022-06-21_cpaior_dpdp/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2022-06-21_cpaior_dpdp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solving Vehicle Routing Problems</title>
+      <link>https://wouterkool.github.io/talk/2022-04-28_microsoft/</link>
+      <pubDate>Thu, 28 Apr 2022 17:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2022-04-28_microsoft/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Unbiased Gradient Estimation with Balanced Assignments for Mixtures of Experts</title>
@@ -152,6 +197,15 @@
       <pubDate>Thu, 18 Apr 2019 19:40:00 +0000</pubDate>
       
       <guid>https://wouterkool.github.io/talk/2019-04-18_utrecht_data_science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interview with &#39;De Dataloog&#39; (Dutch Podcast on Data and Machine Learning)</title>
+      <link>https://wouterkool.github.io/talk/2019-04-16_dataloog/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wouterkool.github.io/talk/2019-04-16_dataloog/</guid>
       <description></description>
     </item>
     
