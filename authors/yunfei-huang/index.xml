@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Max Welling on Wouter Kool</title>
+    <link>https://wouterkool.github.io/authors/max-welling/</link>
+    <description>Recent content in Max Welling on Wouter Kool</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0100</lastBuildDate>
+    
+	    <atom:link href="https://wouterkool.github.io/authors/max-welling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deep Policy Dynamic Programming for Vehicle Routing Problems</title>
+      <link>https://wouterkool.github.io/publication/deep-policy-dynamic-programming/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/deep-policy-dynamic-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ancestral Gumbel-Top-k Sampling for Sampling Without Replacement</title>
+      <link>https://wouterkool.github.io/publication/ancestral-gumbel-top-k-sampling/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/ancestral-gumbel-top-k-sampling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimating Gradients for Discrete Random Variables by Sampling without Replacement</title>
+      <link>https://wouterkool.github.io/publication/estimating-gradients-without-replacement/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/estimating-gradients-without-replacement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Beams and Where to Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement</title>
+      <link>https://wouterkool.github.io/publication/stochastic-beam-search/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/stochastic-beam-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Buy 4 REINFORCE Samples, Get a Baseline for Free!</title>
+      <link>https://wouterkool.github.io/publication/buy-4-samples-free-baseline/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/buy-4-samples-free-baseline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attention, Learn to Solve Routing Problems!</title>
+      <link>https://wouterkool.github.io/publication/attention-learn-to-route/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://wouterkool.github.io/publication/attention-learn-to-route/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
