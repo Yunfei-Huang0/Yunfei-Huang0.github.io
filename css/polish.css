@@ -1,0 +1,114 @@
+/* ==========================================================
+   Academic polish for yunfei-huang0.github.io
+   Keeps the original layout; refines type, spacing and detail.
+   ========================================================== */
+:root {
+  --ac-green: #2e7d32;
+  --ac-green-soft: #e8f3ea;
+  --ac-ink: #1f2933;
+  --ac-muted: #5f6b76;
+  --ac-line: #e6e9ec;
+  --ac-serif: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+}
+
+body { color: var(--ac-ink); -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; }
+
+/* ---------- headings in a classic serif ---------- */
+.home-section h1, .section-heading h1, #profile .portrait-title h2,
+.universal-wrapper h1, .article-container h1, .pub h1 {
+  font-family: var(--ac-serif); font-weight: 600; letter-spacing: -.005em;
+}
+.section-heading h1, .home-section .col-lg-8 > h1 { font-size: 2.25rem; position: relative; padding-bottom: .7rem; }
+.section-heading h1::after, .home-section .col-lg-8 > h1::after {
+  content: ""; position: absolute; left: 0; bottom: 0; width: 44px; height: 3px; border-radius: 2px; background: var(--ac-green);
+}
+#about h3 { font-family: var(--ac-serif); font-weight: 600; font-size: 1.3rem; }
+
+/* ---------- navbar ---------- */
+#navbar-main { box-shadow: 0 1px 0 var(--ac-line); background: rgba(255,255,255,.92) !important;
+  backdrop-filter: saturate(150%) blur(10px); -webkit-backdrop-filter: saturate(150%) blur(10px); }
+#navbar-main .navbar-brand { font-family: var(--ac-serif); font-weight: 600; font-size: 1.45rem; }
+#navbar-main .nav-link { position: relative; }
+#navbar-main .nav-link.active, #navbar-main .nav-link:hover { color: var(--ac-green) !important; }
+#navbar-main .nav-link.active::after {
+  content: ""; position: absolute; left: .5rem; right: .5rem; bottom: .4rem; height: 2px; background: var(--ac-green); border-radius: 2px; }
+
+/* ---------- profile column ---------- */
+#profile .portrait {
+  box-shadow: 0 0 0 5px #fff, 0 0 0 6px rgba(46,125,50,.45), 0 14px 34px rgba(15, 23, 42, .16);
+  transition: transform .4s ease;
+}
+#profile .portrait:hover { transform: scale(1.02); }
+#profile .portrait-title h2 { font-size: 2.1rem; margin-top: 1.2rem; }
+#profile .portrait-title h3 { font-size: 1.05rem; color: var(--ac-muted); }
+#profile .network-icon .big-icon { color: var(--ac-ink); transition: color .2s ease, transform .2s ease; }
+#profile .network-icon a:hover .big-icon { color: var(--ac-green); transform: translateY(-2px); }
+
+/* ---------- about ---------- */
+#about [itemprop="description"] > p { font-size: 1.07rem; line-height: 1.85; }
+#about [itemprop="description"] > p:first-of-type {
+  font-family: var(--ac-serif); font-size: 1.28rem; line-height: 1.7; font-style: normal; color: #111827;
+  border-left: 3px solid var(--ac-green); padding-left: 1.1rem; margin: 1.2rem 0 1.6rem;
+}
+#about [itemprop="description"] > p:first-of-type em { font-style: normal; }
+#about .ul-interests { padding-left: 0; }
+#about .ul-interests li { list-style: none; display: inline-block; margin: 0 .35rem .5rem 0; padding: .25rem .8rem;
+  border-radius: 999px; background: var(--ac-green-soft); color: #1b5e20; font-size: .93rem; }
+#about .ul-edu .course { font-weight: 600; }
+
+/* ---------- sections ---------- */
+.home-section { padding: 88px 0; }
+#research, #talks, #teaching { background: #f8f9fa; }
+#publications, #projects, #contact { background: #ffffff; }
+
+/* ---------- publications & talks ---------- */
+#publications .pub-list-item, #container-publications .pub-list-item {
+  position: relative; padding: .9rem 1.1rem .9rem 1.2rem; margin-bottom: .6rem !important;
+  border-left: 3px solid transparent; border-radius: 0 8px 8px 0; transition: background .25s ease, border-color .25s ease;
+}
+#publications .pub-list-item:hover, #container-publications .pub-list-item:hover {
+  background: #f6faf6; border-left-color: var(--ac-green);
+}
+#publications .pub-icon, #container-publications .pub-icon { display: none; }
+.pub-list-item a[itemprop="name"] { font-weight: 600; }
+.pub-list-item p { margin: .45rem 0 0; }
+.btn-outline-primary.btn-sm { border-radius: 999px; padding: .1rem .7rem; font-size: .78rem; }
+
+#talks .media.stream-item { background: #fff; border: 1px solid var(--ac-line); border-radius: 10px;
+  padding: 1.1rem 1.3rem; margin-bottom: .9rem; transition: box-shadow .25s ease, border-color .25s ease; }
+#talks .media.stream-item:hover { box-shadow: 0 8px 22px rgba(15,23,42,.06); border-color: rgba(46,125,50,.35); }
+#talks .article-title { font-family: var(--ac-serif); font-size: 1.2rem; font-weight: 600; }
+
+/* ---------- projects / teaching / contact ---------- */
+#projects .card { border-radius: 10px; overflow: hidden; border: 1px solid var(--ac-line); transition: box-shadow .25s ease; }
+#projects .card:hover { box-shadow: 0 10px 26px rgba(15,23,42,.08); }
+#teaching h3 { font-family: var(--ac-serif); font-weight: 600; }
+#contact .fa-li { color: var(--ac-green); }
+
+/* ---------- research slider fine-tuning ---------- */
+#research .rs-track { box-shadow: 0 8px 26px rgba(15, 23, 42, .08); border: 1px solid var(--ac-line); }
+#research .rs-body h3 { font-family: var(--ac-serif); font-weight: 600; }
+
+/* ---------- gentle fade-in on scroll ---------- */
+.ac-reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+.ac-reveal.ac-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .ac-reveal { opacity: 1; transform: none; transition: none; } }
+
+/* ---------- footer ---------- */
+.site-footer { border-top: 1px solid var(--ac-line); color: var(--ac-muted); }
+
+/* ---------- dark mode ---------- */
+body.dark #research, body.dark #talks, body.dark #teaching { background: #161a1f; }
+body.dark #publications, body.dark #projects, body.dark #contact { background: transparent; }
+body.dark #navbar-main { background: rgba(18,22,26,.92) !important; }
+body.dark #talks .media.stream-item { background: #1c2127; border-color: #2a3038; }
+body.dark #about [itemprop="description"] > p:first-of-type { color: #e5e7eb; }
+body.dark #publications .pub-list-item:hover, body.dark #container-publications .pub-list-item:hover { background: #1a221c; }
+body.dark #about .ul-interests li { background: rgba(102,187,106,.12); color: #c8e6c9; }
+
+/* refinements */
+#profile .portrait-title h3 { font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; font-weight: 400; }
+#profile .portrait-title h3 a { font-weight: 500; }
+.btn-outline-primary.btn-sm { padding: .2rem .75rem; line-height: 1.5; text-decoration: none !important; }
+.pub-list-item a[itemprop="name"] { font-weight: 500; }
