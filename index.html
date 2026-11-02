@@ -85,6 +85,10 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-link " href="/#research" data-target="#research"><span>Research</span></a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
         </li>
 
@@ -273,6 +277,145 @@
 
 
 
+
+<!-- research slider -->
+<section id="research" class="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Research</h1>
+        <p class="rs-hint">Swipe left or right</p>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="rs" aria-roledescription="carousel" aria-label="Research topics">
+          <div class="rs-track" tabindex="0">
+
+            <article class="rs-slide" aria-label="1 of 3">
+              <div class="rs-media"><img src="/img/research/tfm.jpg" alt="Cell on a soft gel with measured displacements, and the reconstructed traction force map" loading="lazy"></div>
+              <div class="rs-body">
+                <span class="rs-num">01</span>
+                <h3>Traction force microscopy</h3>
+                <p>How hard do cells pull on their surroundings? From images of a cell on a soft gel, I reconstruct the forces it exerts, using Bayesian methods that choose their own regularization, and more recently Vision Transformer + U-Net models for 2D and 3D data. The methods come with open-source software.</p>
+                <div class="rs-links">
+                  <a href="/publication/traction_force_microscopy_2019/">Sci. Rep. 2019</a>
+                  <a href="/publication/a_Bayesian_traction_force_microscopy/">Comput. Phys. Commun. 2020</a>
+                  <a href="https://arxiv.org/abs/2603.13400" target="_blank" rel="noopener">arXiv 2026</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="rs-slide" aria-label="2 of 3">
+              <div class="rs-media rs-dark">
+                <video src="/img/research/pde.mp4" poster="/img/research/pde.jpg" autoplay muted loop playsinline aria-label="Shallow water simulation: reference solver next to the constrained neural surrogate"></video>
+              </div>
+              <div class="rs-body">
+                <span class="rs-num">02</span>
+                <h3>Neural PDE surrogates</h3>
+                <p>Neural networks can simulate fluids much faster than classical solvers, but their errors usually grow over time. Building symmetries and physical conservation laws into the network keeps long rollouts accurate and stable: the video compares the reference simulation of a shallow-water system with our constrained surrogate.</p>
+                <div class="rs-links">
+                  <a href="/project/icml2025/">Project page</a>
+                  <a href="/publication/Geometric_Physical_Constraints/">ICML 2025</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="rs-slide" aria-label="3 of 3">
+              <div class="rs-media"><img src="/img/research/equations.jpg" alt="Lorenz attractor and Turing patterns, examples of equations identified from data" loading="lazy"></div>
+              <div class="rs-body">
+                <span class="rs-num">03</span>
+                <h3>Identifying governing equations</h3>
+                <p>Which equation produced this data? Sparse Bayesian learning picks out the few terms that matter, with error bars on every coefficient, and active learning decides which data to use next. The approach recovers ODEs, PDEs and stochastic differential equations, from the Lorenz attractor to Turing patterns.</p>
+                <div class="rs-links">
+                  <a href="/publication/sparse_inference_active_learning/">Sci. Rep. 2022</a>
+                  <a href="/publication/Advanced_data_analysis/">PhD thesis</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <button class="rs-btn rs-prev" type="button" aria-label="Previous">&#8249;</button>
+          <button class="rs-btn rs-next" type="button" aria-label="Next">&#8250;</button>
+          <div class="rs-dots" role="tablist"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rs { position: relative; }
+  .rs-hint { color: #888; font-size: .95rem; }
+  .rs-track {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,.10); outline: none;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .rs-track::-webkit-scrollbar { display: none; }
+  .rs-slide { flex: 0 0 100%; scroll-snap-align: start; background: #fff; display: flex; flex-direction: column; }
+  .rs-media { height: 300px; background: #fff; display: flex; align-items: center; justify-content: center; padding: 14px; }
+  .rs-media.rs-dark { background: #fff; }
+  .rs-media img, .rs-media video { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .rs-body { padding: 18px 26px 26px; border-top: 1px solid #eee; }
+  .rs-num { font-size: .8rem; font-weight: 700; letter-spacing: .12em; color: #2962ff; }
+  .rs-body h3 { margin: 2px 0 8px; font-size: 1.45rem; }
+  .rs-body p { font-size: 1rem; line-height: 1.6; margin-bottom: 12px; }
+  .rs-links a { display: inline-block; margin: 4px 8px 0 0; padding: 3px 12px; border: 1px solid #2962ff;
+    border-radius: 999px; font-size: .85rem; text-decoration: none; }
+  .rs-links a:hover { background: #2962ff; color: #fff; }
+  .rs-btn { position: absolute; top: 150px; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%;
+    border: none; background: rgba(255,255,255,.92); box-shadow: 0 2px 10px rgba(0,0,0,.18);
+    font-size: 28px; line-height: 38px; color: #333; cursor: pointer; z-index: 2; }
+  .rs-btn:hover { background: #2962ff; color: #fff; }
+  .rs-prev { left: -14px; } .rs-next { right: -14px; }
+  .rs-dots { text-align: center; margin-top: 14px; }
+  .rs-dots button { width: 10px; height: 10px; border-radius: 50%; border: none; margin: 0 5px; padding: 0;
+    background: #c8c8c8; cursor: pointer; transition: all .2s; }
+  .rs-dots button[aria-selected="true"] { background: #2962ff; width: 26px; border-radius: 5px; }
+  @media (max-width: 576px) {
+    .rs-media { height: 200px; } .rs-btn { top: 100px; width: 36px; height: 36px; line-height: 32px; font-size: 24px; }
+    .rs-prev { left: 4px; } .rs-next { right: 4px; } .rs-body { padding: 14px 16px 20px; }
+  }
+  body.dark .rs-slide, body.dark .rs-body { background: #1e1e1e; border-color: #333; }
+</style>
+
+<script>
+(function () {
+  var root = document.querySelector('#research .rs');
+  if (!root) return;
+  var track = root.querySelector('.rs-track');
+  var slides = root.querySelectorAll('.rs-slide');
+  var dotsBox = root.querySelector('.rs-dots');
+  var dots = [];
+  function current() { return Math.round(track.scrollLeft / track.clientWidth); }
+  function go(i) {
+    i = (i + slides.length) % slides.length;
+    track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+  }
+  slides.forEach(function (s, i) {
+    var d = document.createElement('button');
+    d.type = 'button'; d.setAttribute('role', 'tab'); d.setAttribute('aria-label', 'Slide ' + (i + 1));
+    d.addEventListener('click', function () { go(i); stop(); });
+    dotsBox.appendChild(d); dots.push(d);
+  });
+  function mark() {
+    var c = current();
+    dots.forEach(function (d, i) { d.setAttribute('aria-selected', i === c ? 'true' : 'false'); });
+  }
+  var t; track.addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(mark, 60); });
+  root.querySelector('.rs-prev').addEventListener('click', function () { go(current() - 1); stop(); });
+  root.querySelector('.rs-next').addEventListener('click', function () { go(current() + 1); stop(); });
+  track.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') { go(current() - 1); stop(); }
+    if (e.key === 'ArrowRight') { go(current() + 1); stop(); }
+  });
+  // gentle autoplay that stops as soon as the visitor interacts
+  var timer = setInterval(function () { go(current() + 1); }, 8000);
+  function stop() { clearInterval(timer); }
+  ['pointerdown', 'touchstart', 'wheel'].forEach(function (ev) { track.addEventListener(ev, stop, { passive: true }); });
+  mark();
+})();
+</script>
+<!-- research slider end -->
 
 <section id="publications" class="home-section wg-pages   "  >
 <div class="container">
