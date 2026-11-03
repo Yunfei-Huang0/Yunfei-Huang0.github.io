@@ -303,11 +303,11 @@
           <div class="rs-track" tabindex="0">
 
             <article class="rs-slide" aria-label="1 of 3">
-              <div class="rs-media"><img src="/img/research/tfm.jpg?v=2" alt="Cell on a soft gel with measured displacements, and the reconstructed traction force map" loading="lazy"></div>
+              <div class="rs-media"><img src="/img/research/tfm.jpg?v=2" alt="Cell on a soft gel with measured displacements, and the traction force map reconstructed by the model" loading="lazy"></div>
               <div class="rs-body">
                 <span class="rs-num">01</span>
-                <h3>Traction force microscopy</h3>
-                <p>How hard do cells pull on their surroundings? From images of a cell on a soft gel, I reconstruct the forces it exerts, using Bayesian methods that choose their own regularization, and more recently Vision Transformer + U-Net models for 2D and 3D data. The methods come with open-source software.</p>
+                <h3>Deep learning for traction force microscopy</h3>
+                <p>I develop hybrid <b>Vision Transformer + U-Net</b> networks that reconstruct the forces cells exert on soft substrates directly from microscopy data, for 2D and 3D traction force microscopy. The models generalize across spatial scales and noise levels and can take metadata such as cell type as extra input. They build on my <b>Bayesian inference</b> methods with automatic regularization, released as open-source software.</p>
                 <div class="rs-links">
                   <a href="/publication/traction_force_microscopy_2019/">Sci. Rep. 2019</a>
                   <a href="/publication/a_Bayesian_traction_force_microscopy/">Comput. Phys. Commun. 2020</a>
@@ -322,8 +322,8 @@
               </div>
               <div class="rs-body">
                 <span class="rs-num">02</span>
-                <h3>Neural PDE surrogates</h3>
-                <p>Neural networks can simulate fluids much faster than classical solvers, but their errors usually grow over time. Building symmetries and physical conservation laws into the network keeps long rollouts accurate and stable: the video compares the reference simulation of a shallow-water system with our constrained surrogate.</p>
+                <h3>Physics-constrained neural PDE surrogates</h3>
+                <p>I design <b>symmetry-equivariant convolutional networks</b> with <b>hard physical constraints</b>: new input and output layers for staggered grids that enforce rotation symmetry and the conservation of mass and momentum. These surrogates give accurate, stable long rollouts for shallow-water flow and turbulence and generalize beyond the training data (ICML 2025). The video compares the reference solver with our network.</p>
                 <div class="rs-links">
                   <a href="/project/icml2025/">Project page</a>
                   <a href="/publication/Geometric_Physical_Constraints/">ICML 2025</a>
@@ -335,8 +335,8 @@
               <div class="rs-media"><img src="/img/research/equations.jpg" alt="Lorenz attractor and Turing patterns, examples of equations identified from data" loading="lazy"></div>
               <div class="rs-body">
                 <span class="rs-num">03</span>
-                <h3>Identifying governing equations</h3>
-                <p>Which equation produced this data? Sparse Bayesian learning picks out the few terms that matter, with error bars on every coefficient, and active learning decides which data to use next. The approach recovers ODEs, PDEs and stochastic differential equations, from the Lorenz attractor to Turing patterns.</p>
+                <h3>Machine learning for discovering governing equations</h3>
+                <p>Which equation produced this data? My <b>sparse Bayesian learning</b> algorithm with automatic thresholding selects the few terms that govern a system and quantifies the <b>uncertainty</b> of every coefficient, while an <b>active-learning</b> loop decides which perturbations to apply next. It recovers ODEs, PDEs and stochastic differential equations, from the Lorenz attractor to Turing patterns.</p>
                 <div class="rs-links">
                   <a href="/publication/sparse_inference_active_learning/">Sci. Rep. 2022</a>
                   <a href="/publication/Advanced_data_analysis/">PhD thesis</a>
