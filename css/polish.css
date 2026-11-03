@@ -12,7 +12,7 @@
 }
 
 body { color: var(--ac-ink); -webkit-font-smoothing: antialiased; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: auto; }
 
 /* ---------- headings in a classic serif ---------- */
 .home-section h1, .section-heading h1, #profile .portrait-title h2,
