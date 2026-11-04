@@ -99,10 +99,6 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
-        </li>
-
-        <li class="nav-item">
           <a class="nav-link " href="/#teaching" data-target="#teaching"><span>Teaching</span></a>
         </li>
 
@@ -290,144 +286,106 @@
 
 
 
-<!-- research slider -->
+<!-- research themes -->
 <section id="research" class="home-section">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-4 section-heading">
+      <div class="col-12 section-heading rc-head">
         <h1>Research</h1>
-        <p class="rs-hint">Swipe left or right</p>
+        <p class="rc-intro">I develop machine-learning methods that respect physics, from cell mechanics to fluid dynamics.</p>
       </div>
-      <div class="col-12 col-lg-8">
-        <div class="rs" aria-roledescription="carousel" aria-label="Research topics">
-          <div class="rs-track" tabindex="0">
+    </div>
+    <div class="rc-grid">
 
-            <article class="rs-slide" aria-label="1 of 3">
-              <div class="rs-media"><img src="/img/research/tfm.jpg?v=2" alt="Cell on a soft gel with measured displacements, and the traction force map reconstructed by the model" loading="lazy"></div>
-              <div class="rs-body">
-                <span class="rs-num">01</span>
-                <h3>Deep learning for traction force microscopy</h3>
-                <p>I develop hybrid <b>Vision Transformer + U-Net</b> networks that reconstruct the forces cells exert on soft substrates directly from microscopy data, for 2D and 3D traction force microscopy. The models generalize across spatial scales and noise levels and can take metadata such as cell type as extra input. They build on my <b>Bayesian inference</b> methods with automatic regularization, released as open-source software.</p>
-                <div class="rs-links">
-                  <a href="/publication/traction_force_microscopy_2019/">Sci. Rep. 2019</a>
-                  <a href="/publication/a_Bayesian_traction_force_microscopy/">Comput. Phys. Commun. 2020</a>
-                  <a href="https://arxiv.org/abs/2603.13400" target="_blank" rel="noopener">arXiv 2026</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="rs-slide" aria-label="2 of 3">
-              <div class="rs-media rs-dark">
-                <video src="/img/research/pde.mp4" poster="/img/research/pde.jpg" autoplay muted loop playsinline aria-label="Shallow water simulation: reference solver next to the constrained neural surrogate"></video>
-              </div>
-              <div class="rs-body">
-                <span class="rs-num">02</span>
-                <h3>Physics-constrained neural PDE surrogates</h3>
-                <p>I design <b>symmetry-equivariant convolutional networks</b> with <b>hard physical constraints</b>: new input and output layers for staggered grids that enforce rotation symmetry and the conservation of mass and momentum. These surrogates give accurate, stable long rollouts for shallow-water flow and turbulence and generalize beyond the training data (ICML 2025). The video compares the reference solver with our network.</p>
-                <div class="rs-links">
-                  <a href="/project/icml2025/">Project page</a>
-                  <a href="/publication/Geometric_Physical_Constraints/">ICML 2025</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="rs-slide" aria-label="3 of 3">
-              <div class="rs-media"><img src="/img/research/equations.jpg" alt="Lorenz attractor and Turing patterns, examples of equations identified from data" loading="lazy"></div>
-              <div class="rs-body">
-                <span class="rs-num">03</span>
-                <h3>Machine learning for discovering governing equations</h3>
-                <p>Which equation produced this data? My <b>sparse Bayesian learning</b> algorithm with automatic thresholding selects the few terms that govern a system and quantifies the <b>uncertainty</b> of every coefficient, while an <b>active-learning</b> loop decides which perturbations to apply next. It recovers ODEs, PDEs and stochastic differential equations, from the Lorenz attractor to Turing patterns.</p>
-                <div class="rs-links">
-                  <a href="/publication/sparse_inference_active_learning/">Sci. Rep. 2022</a>
-                  <a href="/publication/Advanced_data_analysis/">PhD thesis</a>
-                </div>
-              </div>
-            </article>
-
+      <article class="rc-card">
+        <a class="rc-media" href="/img/research/tfm.jpg" data-zoom><img src="/img/research/tfm.jpg?v=2" alt="Cell on a soft gel and the traction force map reconstructed from it" loading="lazy"></a>
+        <div class="rc-body">
+          <span class="rc-num">01</span>
+          <h3>Deep learning for traction force microscopy</h3>
+          <p>Hybrid <b>Vision Transformer + U-Net</b> networks that reconstruct the forces cells exert on soft substrates, in 2D and 3D, building on my <b>Bayesian</b> TFM methods and open-source software.</p>
+          <div class="rc-links">
+            <a href="https://arxiv.org/abs/2603.13400" target="_blank" rel="noopener">arXiv 2026</a>
+            <a href="/publication/a_Bayesian_traction_force_microscopy/">CPC 2020</a>
+            <a href="/publication/traction_force_microscopy_2019/">Sci. Rep. 2019</a>
+            <a class="rc-code" href="https://data.mendeley.com/datasets/229bnpp8rb/1" target="_blank" rel="noopener"><i class="fas fa-code"></i> Software</a>
           </div>
-          <button class="rs-btn rs-prev" type="button" aria-label="Previous">&#8249;</button>
-          <button class="rs-btn rs-next" type="button" aria-label="Next">&#8250;</button>
-          <div class="rs-dots" role="tablist"></div>
         </div>
-      </div>
+      </article>
+
+      <article class="rc-card">
+        <a class="rc-media rc-video" href="/project/icml2025/"><video src="/img/research/pde.mp4" poster="/img/research/pde.jpg?v=2" autoplay muted loop playsinline aria-label="Shallow water simulation: reference solver next to the constrained neural surrogate"></video></a>
+        <div class="rc-body">
+          <span class="rc-num">02</span>
+          <h3>Physics-constrained neural PDE surrogates</h3>
+          <p><b>Symmetry-equivariant</b> networks with <b>hard conservation laws</b> on staggered grids give accurate, stable long rollouts of fluid flows and real ocean currents.</p>
+          <div class="rc-links">
+            <a class="rc-primary" href="/project/icml2025/"><i class="fas fa-arrow-right"></i> Project page</a>
+            <a href="/publication/Geometric_Physical_Constraints/">ICML 2025</a>
+            <a href="https://doi.org/10.22541/essoar.170224565.52373387/v1" target="_blank" rel="noopener">Preprint 2024</a>
+            <a class="rc-code" href="https://github.com/m-dml/double-constraint-pde-surrogates" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="rc-card">
+        <a class="rc-media" href="/img/research/equations.jpg" data-zoom><img src="/img/research/equations_card.jpg" alt="Lorenz attractor and Turing patterns recovered from data" loading="lazy"></a>
+        <div class="rc-body">
+          <span class="rc-num">03</span>
+          <h3>Machine learning for governing equations</h3>
+          <p><b>Sparse Bayesian learning</b> with <b>active learning</b> discovers ODEs, PDEs and SDEs from data, with uncertainty on every coefficient.</p>
+          <div class="rc-links">
+            <a href="/publication/sparse_inference_active_learning/">Sci. Rep. 2022</a>
+            <a href="/publication/Advanced_data_analysis/">PhD thesis</a>
+            <a class="rc-code" href="https://doi.org/10.5281/zenodo.10732552" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
 <style>
-  .rs { position: relative; }
-  .rs-hint { color: #888; font-size: .95rem; }
-  .rs-track {
-    display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
-    border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,.10); outline: none;
-    scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  }
-  .rs-track::-webkit-scrollbar { display: none; }
-  .rs-slide { flex: 0 0 100%; scroll-snap-align: start; background: #fff; display: flex; flex-direction: column; }
-  .rs-media { height: 300px; background: #fff; display: flex; align-items: center; justify-content: center; padding: 14px; }
-  .rs-media.rs-dark { background: #fff; }
-  .rs-media img, .rs-media video { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
-  .rs-body { padding: 18px 26px 26px; border-top: 1px solid #eee; }
-  .rs-num { font-size: .8rem; font-weight: 700; letter-spacing: .12em; color: #2e7d32; }
-  .rs-body h3 { margin: 2px 0 8px; font-size: 1.45rem; }
-  .rs-body p { font-size: 1rem; line-height: 1.6; margin-bottom: 12px; }
-  .rs-links a { display: inline-block; margin: 4px 8px 0 0; padding: 3px 12px; border: 1px solid #2e7d32;
-    border-radius: 999px; font-size: .85rem; text-decoration: none; }
-  .rs-links a:hover { background: #2e7d32; color: #fff; }
-  .rs-btn { position: absolute; top: 150px; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%;
-    border: none; background: rgba(255,255,255,.92); box-shadow: 0 2px 10px rgba(0,0,0,.18);
-    font-size: 28px; line-height: 38px; color: #333; cursor: pointer; z-index: 2; }
-  .rs-btn:hover { background: #2e7d32; color: #fff; }
-  .rs-prev { left: -14px; } .rs-next { right: -14px; }
-  .rs-dots { text-align: center; margin-top: 14px; }
-  .rs-dots button { width: 10px; height: 10px; border-radius: 50%; border: none; margin: 0 5px; padding: 0;
-    background: #c8c8c8; cursor: pointer; transition: all .2s; }
-  .rs-dots button[aria-selected="true"] { background: #2e7d32; width: 26px; border-radius: 5px; }
-  @media (max-width: 576px) {
-    .rs-media { height: 200px; } .rs-btn { top: 100px; width: 36px; height: 36px; line-height: 32px; font-size: 24px; }
-    .rs-prev { left: 4px; } .rs-next { right: 4px; } .rs-body { padding: 14px 16px 20px; }
-  }
-  body.dark .rs-slide, body.dark .rs-body { background: #1e1e1e; border-color: #333; }
+  #research .rc-head { margin-bottom: 1.6rem; }
+  #research .rc-intro { color: #5f6b76; font-size: 1.08rem; margin-top: .9rem; }
+  .rc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+  .rc-card { display: flex; flex-direction: column; background: #fff; border: 1px solid #e6e9ec; border-radius: 14px;
+    overflow: hidden; box-shadow: 0 4px 16px rgba(15,23,42,.05); transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .rc-card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(16,64,32,.12); border-color: rgba(46,125,50,.35); }
+  .rc-media { display: block; aspect-ratio: 16 / 10; background: #fff; border-bottom: 1px solid #eef0f2; overflow: hidden; cursor: zoom-in; }
+  .rc-media.rc-video { cursor: pointer; }
+  .rc-media img, .rc-media video { width: 100%; height: 100%; object-fit: contain; display: block; padding: 10px; transition: transform .5s ease; }
+  .rc-card:hover .rc-media img, .rc-card:hover .rc-media video { transform: scale(1.03); }
+  .rc-body { padding: 1.2rem 1.35rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
+  .rc-num { font-size: .78rem; font-weight: 700; letter-spacing: .14em; color: #2e7d32; }
+  .rc-body h3 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.32rem; line-height: 1.3; margin: .25rem 0 .6rem; }
+  .rc-body p { font-size: .98rem; line-height: 1.65; color: #374151; margin-bottom: 1rem; flex: 1; }
+  .rc-links { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .rc-links a { font-size: .8rem; padding: .22rem .7rem; border-radius: 999px; border: 1px solid #2e7d32; color: #2e7d32;
+    text-decoration: none; transition: background .2s, color .2s; white-space: nowrap; }
+  .rc-links a:hover, .rc-links a.rc-primary { background: #2e7d32; color: #fff; }
+  .rc-links a.rc-primary:hover { background: #1b5e20; }
+  .rc-links a.rc-code { border-color: #9aa5b1; color: #374151; }
+  .rc-links a.rc-code:hover { background: #374151; border-color: #374151; color: #fff; }
+  @media (max-width: 991px) { .rc-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .rc-grid { grid-template-columns: 1fr; } }
+  body.dark .rc-card { background: #1c2127; border-color: #2a3038; }
+  body.dark .rc-body p { color: #d1d5db; }
+  body.dark .rc-media { background: #fff; }
 </style>
-
 <script>
-(function () {
-  var root = document.querySelector('#research .rs');
-  if (!root) return;
-  var track = root.querySelector('.rs-track');
-  var slides = root.querySelectorAll('.rs-slide');
-  var dotsBox = root.querySelector('.rs-dots');
-  var dots = [];
-  function current() { return Math.round(track.scrollLeft / track.clientWidth); }
-  function go(i) {
-    i = (i + slides.length) % slides.length;
-    track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
-  }
-  slides.forEach(function (s, i) {
-    var d = document.createElement('button');
-    d.type = 'button'; d.setAttribute('role', 'tab'); d.setAttribute('aria-label', 'Slide ' + (i + 1));
-    d.addEventListener('click', function () { go(i); stop(); });
-    dotsBox.appendChild(d); dots.push(d);
-  });
-  function mark() {
-    var c = current();
-    dots.forEach(function (d, i) { d.setAttribute('aria-selected', i === c ? 'true' : 'false'); });
-  }
-  var t; track.addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(mark, 60); });
-  root.querySelector('.rs-prev').addEventListener('click', function () { go(current() - 1); stop(); });
-  root.querySelector('.rs-next').addEventListener('click', function () { go(current() + 1); stop(); });
-  track.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowLeft') { go(current() - 1); stop(); }
-    if (e.key === 'ArrowRight') { go(current() + 1); stop(); }
-  });
-  // gentle autoplay that stops as soon as the visitor interacts
-  var timer = setInterval(function () { go(current() + 1); }, 8000);
-  function stop() { clearInterval(timer); }
-  ['pointerdown', 'touchstart', 'wheel'].forEach(function (ev) { track.addEventListener(ev, stop, { passive: true }); });
-  mark();
+(function(){
+  var links=document.querySelectorAll('#research [data-zoom]'); if(!links.length) return;
+  var z=document.querySelector('.figzoom');
+  if(!z){ z=document.createElement('div'); z.className='figzoom'; z.innerHTML='<button class="figzoom-close" aria-label="Close">&times;</button><img alt=""><p class="figzoom-cap"></p>'; document.body.appendChild(z);
+    z.addEventListener('click',function(e){ if(e.target.tagName!=='IMG'){ z.classList.remove('open'); document.body.style.overflow=''; } }); }
+  links.forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); z.querySelector('img').src=a.getAttribute('href');
+    z.querySelector('.figzoom-cap').textContent=a.closest('.rc-card').querySelector('h3').textContent; z.classList.add('open'); document.body.style.overflow='hidden'; }); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ z.classList.remove('open'); document.body.style.overflow=''; } });
 })();
 </script>
-<!-- research slider end -->
+<!-- research themes end -->
+
 
 <section id="publications" class="home-section wg-pages   "  >
 <div class="container">
@@ -1056,95 +1014,7 @@
 
 
 
-<!--section  of project  -->
-<section id="projects" class="home-section wg-portfolio   "  >
-<div class="container">
-<div class="row">
-<div class="col-xs-12 col-md-4 section-heading">
-<h1>Projects</h1>
-</div>
-<div class="col-xs-12 col-md-8">
-<div class="isotope projects-container js-layout-masonry ">
 
-<!--&lt;!&ndash;project 1&ndash;&gt;-->
-<!--<div class="project-card project-item isotope-item js-id-Demo">-->
-<!--  <div class="card">-->
-<!--      <img src="/project/euro-meets-neurips-2022/featured_hu1f42c696d1b90a785c18ee3b276ccea7_434312_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">-->
-<!--    </a>-->
-<!--    <div class="card-text">-->
-<!--      <div class="card-desription">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<!--&lt;!&ndash;project 1 end &ndash;&gt;-->
-
-
-
-<!--&lt;!&ndash;project 2&ndash;&gt;-->
-<!--<div class="project-card project-item isotope-item js-id-Demo">-->
-<!--  <div class="card">-->
-<!--    <a href="https://yunfei-huang0.github.io/ilikeclr" target="_blank" rel="noopener" class="card-image hover-overlay">-->
-<!--      <img src="/project/ilikeclr/featured_hucb84d387c01f6be4767a7f14e6178366_682441_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">-->
-<!--    </a>-->
-
-<!--    <div class="card-text">-->
-<!--      <h4><a href="https://yunfei-huang0.github.io/ilikeclr" target="_blank" rel="noopener">IlikeCLR</a></h4>-->
-<!--      <div class="card-desription">-->
-<!--        <p><a href="https://yunfei-huang0.github.io/ilikeclr">IlikeCLR</a> allows to browse and like papers from <a href="https://iclr.cc/virtual_2020/">ICLR 2020</a> to get instant (maximum &lsquo;like&rsquo;-lihood) recommendations.</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--&lt;!&ndash;project 2 end&ndash;&gt;-->
-
-<!--project 2-->
-<div class="project-card project-item isotope-item js-id-Demo">
-  <div class="card">
-    <a href="project/icml2025" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/project/icml2025/double1.jpg" alt="" class="img-responsive">
-    </a>
-
-    <div class="card-text">
-      <h4><a href="project/icml2025" target="_blank" rel="noopener">Double_constraints_PDE</a></h4>
-      <div class="card-desription">
-        <p> Neural PDE surrogates with geometric and physical constraints that give more accurate and stable long-term predictions (ICML 2025).</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!--project 2 end-->
-
-
-
-<!--&lt;!&ndash;project 3&ndash;&gt;-->
-<!--<div class="project-card project-item isotope-item js-id-Demo">-->
-<!--  <div class="card">-->
-
-
-<!--    <a href="http://www.set-finder.com" target="_blank" rel="noopener" class="card-image hover-overlay">-->
-<!--      <img src="/project/set-finder/featured_hu37cca3c455e3c4588274c55be279dd25_395824_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">-->
-<!--    </a>-->
-
-<!--    <div class="card-text">-->
-<!--      <h4><a href="http://www.set-finder.com" target="_blank" rel="noopener">SET® Finder</a></h4>-->
-<!--      <div class="card-desription">-->
-<!--        <p><a href="http://www.set-finder.com">SET® Finder</a> is an Android/iOS app that uses TensorFlow to run a Deep Neural Network on-device to find SETs in the <a href="https://www.setgame.com/">SET® card game</a>.</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--&lt;!&ndash;project 3 end &ndash;&gt;-->
-
-
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!--section end -->
 
 
 
