@@ -190,7 +190,8 @@
   .pp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .pp-bib { background: #0f1720; color: #e5e7eb; border-radius: 10px; padding: 1.2rem 1.4rem; font-size: .92rem; overflow-x: auto; }
   .pp-bib code { color: inherit; background: none; }
-  .pp-sec .vec { font-style: italic; }
+  .vec { font-style: italic; position: relative; display: inline-block; padding-top: .15em; }
+  .vec::before { content: "\2192"; position: absolute; left: 50%; top: -.18em; transform: translateX(-40%); font-style: normal; font-size: .75em; line-height: 1; }
   .pp-map { text-align: center; padding: 30px 0 10px; }
   @media (max-width: 576px) { .pp-sec p { text-align: left; } .pp-sec { padding: 40px 0; } }
 </style>
@@ -347,20 +348,20 @@
       and more uniform.</p>
     <p>Here the velocity fields [<i>u</i>, <i>v</i>] are both inputs and outputs. As for the SWEs, we test p1, p4 and p4m
       equivariance, now with three levels of physical constraints: unconstrained (∅), momentum conservation
-      (ρ<span class="vec">u⃗</span>) and mass plus momentum conservation (M+ρ<span class="vec">u⃗</span>).</p>
+      (ρ<span class="vec">u</span>) and mass plus momentum conservation (M+ρ<span class="vec">u</span>).</p>
     <p>The figure below compares autoregressive rollouts from the unconstrained (p1/∅) and the maximally constrained
-      (p4m/M+ρ<span class="vec">u⃗</span>) networks. Both types of constraints improve the accuracy and stability of the INS
+      (p4m/M+ρ<span class="vec">u</span>) networks. Both types of constraints improve the accuracy and stability of the INS
       surrogates (panels b–c), and the best results also outperform networks trained with input noise. To evaluate the surrogates
       beyond the point where their predictions diverge from the reference, we compare the velocity and energy power spectra of the
       predicted fields, as in previous studies. We also compare the gains from symmetries and physical constraints with those of
       specialized training methods for PDE surrogates: data augmentation and the pushforward trick.</p>
     <figure class="pp-fig">
       <img src="static/images/ins_main.jpg" alt="Results for decaying turbulence" loading="lazy">
-      <figcaption><b>p4m/M+ρ<span class="vec">u⃗</span> outperforms other networks with similar parameter counts on INS.</b>
-        (a) Reference horizontal velocity with predictions from p1/∅ and p4m/M+ρ<span class="vec">u⃗</span>. (b–c) Accuracy over
+      <figcaption><b>p4m/M+ρ<span class="vec">u</span> outperforms other networks with similar parameter counts on INS.</b>
+        (a) Reference horizontal velocity with predictions from p1/∅ and p4m/M+ρ<span class="vec">u</span>. (b–c) Accuracy over
         rollouts, with standard error of the mean over 30 ICs. (d–e) Log–log plots of the average velocity and energy spectra over
         30 ICs at 59.5 s; spectra measure the strength of the flow's features at each wavenumber <i>k</i> (number of cycles across
-        the domain) and are scaled by <i>k</i><sup>5</sup>. For both spectra, p4m/M+ρ<span class="vec">u⃗</span> agrees best with
+        the domain) and are scaled by <i>k</i><sup>5</sup>. For both spectra, p4m/M+ρ<span class="vec">u</span> agrees best with
         the reference. (f) Momentum over the whole simulation for p1/∅ and all p4m models. (g) Comparison with data augmentation
         (<b>DA</b>) and the pushforward trick (<b>PF</b>).</figcaption>
     </figure>
@@ -371,15 +372,15 @@
     </figure>
     <h3>Generalization and scaling</h3>
     <p>We tested the surrogates on ICs with the peak wavenumber changed from 10 to 8 or 6. Rollouts of
-      p4m/M+ρ<span class="vec">u⃗</span> match the reference solver and its spectra more closely.</p>
+      p4m/M+ρ<span class="vec">u</span> match the reference solver and its spectra more closely.</p>
     <figure class="pp-fig">
       <img src="static/images/ins_gen.jpg" alt="Generalization results for decaying turbulence" loading="lazy">
       <figcaption><b>Generalization</b> beyond the training data for decaying turbulence. (a) Rollouts from p1/∅ and
-        p4m/M+ρ<span class="vec">u⃗</span> on ICs with peak wavenumber 8. (b–c) Velocity and energy spectra at <i>t</i> = 99.7 s,
+        p4m/M+ρ<span class="vec">u</span> on ICs with peak wavenumber 8. (b–c) Velocity and energy spectra at <i>t</i> = 99.7 s,
         averaged over 10 ICs.</figcaption>
     </figure>
     <p>We also studied how the benefit of symmetry and physical constraints depends on network and dataset size. We trained p1/∅
-      and p4m/M+ρ<span class="vec">u⃗</span> networks with 0.1 M, 2 M and 8.5 M parameters on the same dataset (100 simulations),
+      and p4m/M+ρ<span class="vec">u</span> networks with 0.1 M, 2 M and 8.5 M parameters on the same dataset (100 simulations),
       and 0.1 M-parameter networks on datasets of 100, 400 and 760 simulations. The constraints improved performance robustly
       across all network and dataset sizes.</p>
     <figure class="pp-fig">
@@ -404,7 +405,7 @@
       <img src="static/images/real_fig.jpg" alt="Forecasts of real ocean currents" loading="lazy">
       <figcaption>Accuracy of neural PDE surrogates for <b>real-world ocean currents</b>, for the unconstrained modern U-Net
         (p1/∅), <a href="https://openreview.net/pdf?id=wta_8Hx2KD" target="_blank" rel="noopener">Wang et al.'s EquRot U-Net</a>,
-        and the doubly constrained network p4m/M+ρ<span class="vec">u⃗</span>. (a) Zonal ocean currents predicted by the three
+        and the doubly constrained network p4m/M+ρ<span class="vec">u</span>. (a) Zonal ocean currents predicted by the three
         surrogates and the reference data. (b–c) NRMSE-<i>u</i> and correlation for forecasts up to 300 h ahead, averaged over
         30 randomly selected initial conditions.</figcaption>
     </figure>
@@ -467,6 +468,97 @@ function c(){z.classList.remove('open');document.body.style.overflow='';}
 z.addEventListener('click',function(e){if(e.target!==im)c();});document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();
 </script>
 
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script id="dark_mode_reset">try{localStorage.removeItem('dark_mode')}catch(e){}</script>
+<script src="/js/academic.min.d916869fdf6953df2272ba2769375b53.js?v=2"></script>
 
   <div class="container">
     <footer class="site-footer">
