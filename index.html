@@ -298,7 +298,7 @@
     <div class="rc-grid">
 
       <article class="rc-card">
-        <a class="rc-media" href="/img/research/tfm.jpg" data-zoom><img src="/img/research/tfm.jpg?v=2" alt="Cell on a soft gel and the traction force map reconstructed from it" loading="lazy"></a>
+        <a class="rc-media" href="/img/research/tfm_card.jpg" data-zoom><img src="/img/research/tfm_card.jpg" alt="Cell on a soft gel with measured displacements, the reconstructed traction force map and a zoom" loading="lazy"></a>
         <div class="rc-body">
           <span class="rc-num">01</span>
           <h3>AI for cell mechanics: traction force microscopy</h3>
@@ -313,7 +313,7 @@
       </article>
 
       <article class="rc-card">
-        <a class="rc-media rc-video" href="/project/icml2025/"><video src="/img/research/pde.mp4" poster="/img/research/pde.jpg?v=2" autoplay muted loop playsinline aria-label="Shallow water simulation: reference solver next to the constrained neural surrogate"></video></a>
+        <a class="rc-media rc-video" href="/project/icml2025/"><video src="/img/research/pde_full.mp4" poster="/img/research/pde_full.jpg" autoplay muted loop playsinline aria-label="Shallow water simulation: reference solver next to the constrained neural surrogate"></video></a>
         <div class="rc-body">
           <span class="rc-num">02</span>
           <h3>Physics- and symmetry-constrained deep learning for PDEs</h3>
@@ -328,7 +328,7 @@
       </article>
 
       <article class="rc-card">
-        <a class="rc-media" href="/img/research/equations.jpg" data-zoom><img src="/img/research/equations_card.jpg" alt="Lorenz attractor and Turing patterns recovered from data" loading="lazy"></a>
+        <a class="rc-media" href="/img/research/equations_card.jpg?v=2" data-zoom><img src="/img/research/equations_card.jpg?v=2" alt="Lorenz attractor and Turing patterns recovered from data" loading="lazy"></a>
         <div class="rc-body">
           <span class="rc-num">03</span>
           <h3>Bayesian machine learning for discovering governing equations</h3>
@@ -352,9 +352,10 @@
   .rc-card { display: flex; flex-direction: column; background: #fff; border: 1px solid #e6e9ec; border-radius: 14px;
     overflow: hidden; box-shadow: 0 4px 16px rgba(15,23,42,.05); transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
   .rc-card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(16,64,32,.12); border-color: rgba(46,125,50,.35); }
-  .rc-media { display: block; aspect-ratio: 16 / 10; background: #fff; border-bottom: 1px solid #eef0f2; overflow: hidden; cursor: zoom-in; }
+  .rc-media { display: block; aspect-ratio: 2 / 1; background: #fff; border-bottom: 1px solid #eef0f2; overflow: hidden; cursor: zoom-in; }
   .rc-media.rc-video { cursor: pointer; }
-  .rc-media img, .rc-media video { width: 100%; height: 100%; object-fit: contain; display: block; padding: 10px; transition: transform .5s ease; }
+  .rc-media.rc-video video { padding: 6px 10px; }
+  .rc-media img, .rc-media video { width: 100%; height: 100%; object-fit: contain; display: block; padding: 0; transition: transform .5s ease; }
   .rc-card:hover .rc-media img, .rc-card:hover .rc-media video { transform: scale(1.03); }
   .rc-body { padding: 1.2rem 1.35rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
   .rc-num { font-size: .78rem; font-weight: 700; letter-spacing: .14em; color: #2e7d32; }
