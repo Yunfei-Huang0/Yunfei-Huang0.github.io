@@ -147,3 +147,15 @@ body.dark #about .ul-interests li { background: none; color: #e5e7eb; }
   .pub-thumb { flex: none; width: 100%; max-width: 420px; }
 }
 body.dark .pub-thumb { border-color: #2a3038; }
+/* thumbnails show the complete figure */
+.pub-thumb { flex: 0 0 260px; }
+.pub-thumb img { object-fit: contain; background: #fff; }
+/* figure zoom */
+.pub-thumb { cursor: zoom-in; }
+.figzoom { position: fixed; inset: 0; z-index: 2000; display: none; align-items: center; justify-content: center; flex-direction: column;
+  background: rgba(15, 20, 25, .88); padding: 3vh 3vw; }
+.figzoom.open { display: flex; animation: figIn .2s ease; }
+@keyframes figIn { from { opacity: 0 } to { opacity: 1 } }
+.figzoom img { max-width: 94vw; max-height: 82vh; background: #fff; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+.figzoom-cap { color: #e5e7eb; margin: 1rem 0 0; max-width: 900px; text-align: center; font-size: 1rem; }
+.figzoom-close { position: absolute; top: 14px; right: 22px; background: none; border: 0; color: #fff; font-size: 2.6rem; line-height: 1; cursor: pointer; }
