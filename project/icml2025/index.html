@@ -190,8 +190,10 @@
   .pp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .pp-bib { background: #0f1720; color: #e5e7eb; border-radius: 10px; padding: 1.2rem 1.4rem; font-size: .92rem; overflow-x: auto; }
   .pp-bib code { color: inherit; background: none; }
-  .vec { font-style: italic; position: relative; display: inline-block; padding-top: .15em; }
-  .vec::before { content: "\2192"; position: absolute; left: 50%; top: -.18em; transform: translateX(-40%); font-style: normal; font-size: .75em; line-height: 1; }
+  .vec { font-style: italic; position: relative; display: inline-block; line-height: 1; padding: 0 .04em; }
+  .vec::before { content: ""; position: absolute; left: .1em; right: .02em; top: .16em; height: 0; border-top: .075em solid currentColor; }
+  .vec::after { content: ""; position: absolute; right: -.02em; top: .085em; width: .16em; height: .16em;
+    border-top: .075em solid currentColor; border-right: .075em solid currentColor; transform: rotate(45deg); }
   .pp-map { text-align: center; padding: 30px 0 10px; }
   @media (max-width: 576px) { .pp-sec p { text-align: left; } .pp-sec { padding: 40px 0; } }
 </style>
