@@ -1,840 +1,525 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
+
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
 
 
-  <title>Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <meta name="author" content="Yunfei Huang">
+  <meta name="description" content="Project page for the ICML 2025 paper by Yunfei Huang and David S. Greenberg: symmetry- and physics-constrained neural PDE surrogates on staggered grids.">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <link rel="alternate" hreflang="en-us" href="https://yunfei-huang0.github.io/project/icml2025/">
+
+  <meta name="theme-color" content="#2e7d32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css"
+          integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+          integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+          integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css"
+          crossorigin="anonymous" title="hl-light">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css"
+          crossorigin="anonymous" title="hl-dark" disabled>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="/css/academic.min.2f3ad830d0a64bf8a36a9a54cc63fcc3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+  <link rel="stylesheet" href="/css/polish.css?v=10">
+
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="canonical" href="https://yunfei-huang0.github.io/project/icml2025/">
+
+  
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="og:site_name" content="Yunfei Huang">
+  <meta property="og:url" content="https://yunfei-huang0.github.io/project/icml2025/">
+  <meta property="og:title" content="Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates | Yunfei Huang">
+  <meta property="og:description" content="Project page for the ICML 2025 paper by Yunfei Huang and David S. Greenberg: symmetry- and physics-constrained neural PDE surrogates on staggered grids."><meta property="og:image"
+               content="https://yunfei-huang0.github.io/img/pubs/icml2025.jpg">
+  <meta property="twitter:image" content="https://yunfei-huang0.github.io/img/pubs/icml2025.jpg"><meta property="og:locale" content="en-us">
+  <meta property="article:published_time" content="2021-02-24T00:00:00&#43;01:00">
+  <meta property="article:modified_time" content="2022-03-08T00:00:00&#43;01:00">
+  
+
+  
+
+<title>Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates (ICML 2025) | Yunfei Huang</title>
 </head>
-<body>
-
-<!--<style>-->
-<!--body {-->
-<!--  background-image: url('static/images/background_1.jpg');-->
-<!--  background-attachment: fixed;-->
-<!--  background-size: 100% 100%;-->
-<!--}-->
-<!--</style>-->
-
-
-  <section style="background-image: url('static/images/background_1.jpg');" class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 style="color:white; font-size:44px;" class="title is-2 publication-title"> Geometric and Physical Constraints
-                Synergistically Enhance Neural PDE Surrogates </h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://yunfei-huang0.github.io/" target="_blank">Yunfei Huang</a><sup style="color:white;">1,2</sup>,</span>
-                <span class="author-block">
-                  <a href="https://m-dml.org/index.html" target="_blank">David S. Greenberg</a><sup style="color:white;">1,2</sup>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span style="color:white;"  class="author-block"><sup>1</sup>Helmholtz Centre Hereon, 21502 Geesthacht.
-                        <sup>2</sup>Helmholtz AI<br>Published in: Forty-Second International Conference on Machine Learning (ICML 2025)</span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="/pdf/ICML2025.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-<!--                    &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
-<!--                    <span class="link-block">-->
-<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
-<!--                      class="external-link button is-normal is-rounded is-dark">-->
-<!--                      <span class="icon">-->
-<!--                        <i class="fas fa-file-pdf"></i>-->
-<!--                      </span>-->
-<!--                      <span>Supplementary</span>-->
-<!--                    </a>-->
-<!--                  </span>-->
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/m-dml/double-constraint-pde-surrogates" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-
-                <!-- poster -->
-                <span class="link-block">
-                        <a href="static/pdfs/poster.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Poster</span>
-                      </a>
-                    </span>
-
-
-<!--             https://www.youtube.com/watch?v=rxa_x0dWbIM&t=295s-->
-                        <!-- video -->
-                <span class="link-block">
-                        <a href="https://www.youtube.com/watch?v=rxa_x0dWbIM&t=295s" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fab fa-youtube"></i>
-                        </span>
-                        <span>Video</span>
-                      </a>
-                    </span>
-
-
-<!--                &lt;!&ndash; ArXiv abstract Link &ndash;&gt;-->
-<!--                <span class="link-block">-->
-<!--                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"-->
-<!--                  class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                    <i class="ai ai-arxiv"></i>-->
-<!--                  </span>-->
-<!--                  <span>arXiv</span>-->
-<!--                </a>-->
-<!--              </span>-->
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!--Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-
-      <h2 style="color:black;margin-top: 20px;" class="subtitle has-text-centered">
-        <b>p4m/M Long Rollout of Prediction for the Shallow Water System
-      </b></h2>
-
-      <video style="margin-top: -24px;" poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/swe_video.mp4"
-        type="video/mp4">
-      </video>
-
-
-      <h2 style="color:black;margin-top: -5px;" class="subtitle has-text-centered">
-        On the left-hand side is a comparison of the p4m/M rollout for surface disturbance (ζ) with the reference.
-          The right-hand side shows the accuracy scores (NRMSE-ζ and correlation) over time.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Neural PDE surrogates can improve the cost-accuracy tradeoff of classical solvers, but often generalize
-              poorly to new initial conditions and accumulate errors over time. Physical and symmetry constraints have
-              shown promise in closing this performance gap, but existing techniques for imposing these inductive
-              biases are incompatible with the staggered grids commonly used in computational fluid dynamics.
-              Here we introduce novel input and output layers that respect physical laws and symmetries on the staggered
-              grids, and for the first time systematically investigate how these constraints, individually
-              and in combination, affect the accuracy of PDE surrogates. We focus on two challenging problems:
-              shallow water equations with closed boundaries and decaying incompressible turbulence. Compared to
-              strong baselines, symmetries and physical constraints consistently improve performance across tasks,
-              architectures, autoregressive prediction steps, accuracy measures, and network sizes. Symmetries are more
-              effective than physical constraints, but surrogates with both performed best, even compared to baselines
-              with data augmentation or pushforward training, while themselves benefitting from the pushforward trick.
-              Doubly-constrained surrogates also generalize better to initial conditions and durations beyond the range
-              of the training data.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<!--&lt;!&ndash; Image carousel &ndash;&gt;-->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--       <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--          First image description.-->
-<!--        </h2>-->
-<!--      </div>-->
-<!--      <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--          Second image description.-->
-<!--        </h2>-->
-<!--      </div>-->
-<!--      <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--         Third image description.-->
-<!--       </h2>-->
-<!--     </div>-->
-<!--     <div class="item">-->
-<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
-<!--      <h2 class="subtitle has-text-centered">-->
-<!--        Fourth image description.-->
-<!--      </h2>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End image carousel &ndash;&gt;-->
-
-
-
-<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
-<!--<section class="hero is-small is-light">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--        <div class="column is-four-fifths">-->
-<!--          -->
-<!--          <div class="publication-video">-->
-<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
-<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"-->
-<!--                    allowfullscreen></iframe>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
-
-
-
-<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 class="title is-3">Another Carousel</h2>-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--        <div class="item item-video1">-->
-<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel1.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video2">-->
-<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel2.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video3">-->
-<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel3.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
-
-
-<!--Neural PDE Surrogates -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-         <h2 style="margin-top: 50px;" class="title is-3"> Neural PDE Surrogates</h2>
-
-          <div class="content has-text-justified">
-          <p>
-            The present study focuses on time-dependent variable fields w(t, x) for a fluid system.
-            The general governing partial differential equations (PDEs) for the system can be written as follows:
-          </p>
-          <p style="text-align:center">
-            w<sub>t</sub>= F(t, x, w, ∇w, ∇<sup>2</sup>w, . . .)
-          </p>
-          <p> with initial conditions and boundary conditions, where t and x are expressed in terms of time and space,
-              respectively. </p>
-
-          <figure>
-                <img src="static/images/ml_p1.jpg" alt="gfglogo" style="width:110%">
-                <figcaption style="font-size:16px;"> <b>The trained neural PDE surrogates</b> were used to predict the time evolution
-                    of a system of PDEs.</figcaption>
-         </figure>
-
-         <p>  We aim to train neural networks to predict the time evolution of a system of PDEs.
-              Thus, the dynamical system can be written as:
-          </p>
-
-          <p style="text-align:center">
-            w(t+∆t, ·) = G[w(t, ·)]
-          </p>
-
-            <p> where G is an update operator of neural network. To provide training data and evaluate performance we
-              use a reference solution generated by a numerical solver with space- and time-discretized variable fields.</p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Neural PDE Surrogates -->
-
-
-<!--Neural PDE Surrogates -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-         <h2 style="margin-top: 50px;" class="title is-3"> Symmetry- and Physics-Constrained Neural Surrogates</h2>
-
-          <div class="content has-text-justified">
-          <p>
-            In this work, we assess the separate and combined benefits of symmetries and conservation laws for
-              neural PDE surrogates. To achieve this, we construct equivariant input layers that support
-              staggered grids, as well as output layers enforcing both equivariance and conservation laws.
-          </p>
-             <figure>
-                <img src="static/images/dauble_constrain.jpg" alt="gfglogo" style="width:110%">
-                <figcaption style="font-size:16px;"> <b>Symmetry- and physics-constrained neural surrogate</b> for
-                    incompressible flow on a staggered grid. A rotation-equivariant input layer maps velocities onto
-                    an unstaggered regular representation,
-                  hidden layers employ steerable convolutions and the equivariant output layer enforces conservation
-                  laws on mass and momentum as it maps to staggered velocities.</figcaption>
-             </figure>
-            <p>
-              Figure demonstrates our overall framework for constructing equivariant, conservative neural surrogates.
-              As an illustrative example, we show the incompressible Navier Stokes equations, with equivariance in
-              translation and rotation, momentum conservation and a divergence-free condition (equivalent to mass conservation).
-              Input data defined on staggered grids are mapped through novel equivariant input
-              layers to a set of convolutional output channels defined at grid cell centers. Each internal activations
-              consist of regular representations: groups of channels indexed by G on
-              which G acts by transforming each spatial field and by permuting the channels according to the group action.
-              Essentially, regular representations are real-valued functions of the discrete symmetry
-              group G. This formulation allows us to use the preexisting library
-                <a style="color:blue;" href="https://openreview.net/forum?id=WE4qe9xlnQw">escnn</a>  for all internal linear
-              transformations between hidden layers. Finally, we employ
-              novel output layers to map the regular representation back
-              to the staggered grid while enforcing conservation laws as
-              hard constraints.
-              </p>
-             <p>
-               In the following section, the emphasis will be placed on the presentation of figures that have been selected
-               on the basis of their relevance to the subject of symmetry in the input layer of networks and entire networks.
-             </p>
-
-             <!-- many images . -->
-             <div id="results-carousel" class="carousel results-carousel">
-                 <div class="item item-image3">
-                  <figure>
-                    <img src="static/images/group_input.jpg" alt="gfglogo" style="width:110%">
-                     <figcaption style="font-size:16px;"> Action of <b>rotation-equivariant input layer</b> on staggered velocity
-                       fields (top left). The filter bank is transformed by each g ∈ G to compute a G-indexed regular
-                       representation y. Rotation-transforming inputs (bottom left) yields permuted, rotated output channels.
-                     </figcaption>
-                  </figure>
-                  </div>
-               <div class="item item-image4">
-                  <figure>
-                    <img src="static/images/group_net.jpg" alt="gfglogo" style="width:110%">
-                     <figcaption style="font-size:16px;"> <b>Equivariance of neural PDE surrogates</b> with specialized input
-                       layers for C-grid velocity fields. The networks used the same modern u-net architecture
-                       and the networks were tested for equivariance in a randomly initialized state, without any training.
-                     </figcaption>
-                  </figure>
-                  </div>
-      </div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Neural PDE Surrogates -->
-
-
-
-<!--2D Shallow Water System -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-         <h2 style="margin-top: 50px;" class="title is-3"> Experiments - 2D Shallow Water System</h2>
-
-          <div class="content has-text-justified">
-          <p>
-            The shallow water equations (SWEs) are widely utilised to describe quasi-static motion in a homogeneous
-            incompressible fluid with a free surface. The focus of this study is nonlinear SWEs in momentum-
-            and mass conservative form. The intricacies of the formulations can be found in our
-            <a style="color:blue;" href="https://openreview.net/forum?id=6f1Hx1eneF">paper</a>!
-          </p>
-          <p> We first trained and evaluated neural surrogates for the SWE task. We followed a hybrid learning strategy,
-              based on the observation that the semiimplicit numerical integration scheme calculates ζ<sup>t+1</sup>
-              slowly with an iterative solver, but then calculates [u<sup>t+1</sup>, v<sup>t+1</sup>] given ζ<sup>t+1</sup>
-            quickly through a mathematical formula. We therefore trained surrogates to predict only ζ<sup>t+1</sup>, and
-            calculat [u<sup>t+1</sup>, v<sup>t+1</sup>]. Keeping parameter counts constant, we compared networks
-            equivariant to 3 symmetry groups: p1 (translation only, as in standard CNNs), p4 (translation-rotation)
-            and p4m (translation-rotation-reflection). We also compared mass conserving networks (M) to those without
-            physical constraints (∅). Moreover, a comparison was made with unconstrained FNO and drnet architectures.
-            The primary results are presented in the following figure and table.
-          </p>
-
-            <!-- many images . -->
-             <div id="results-carousel" class="carousel results-carousel">
-                 <div class="item item-image3">
-                  <figure>
-                    <img src="static/images/swe_mian.jpg" alt="gfglogo" style="width:110%">
-                     <figcaption style="font-size:16px;"> <b>p4m/M outperforms other
-                       networks with similar parameter counts on SWEs</b>. (a) Reference surface disturbance ζ with
-                       predictions from p1/∅ and p4m/M. (b-c) Accuracy over 50h rollouts, with standard error of the
-                       mean over 20 ICs. (d) Training loss over iterations. (e) Histogram of E<sub>t</sub>NRMSE over 20 ICs.
-                       (f) Violation of mass conservation for all methods.
-                       (g) High correlation times for each model.</figcaption>
-                  </figure>
-                  </div>
-               <div class="item item-image4">
-                  <figure>
-                    <img src="static/images/swe_table.jpg" alt="gfglogo" style="width:110%">
-                     <figcaption style="font-size:16px; width:95%; text-align: center"> The NRMSE-ζ, correlation, the mean of the
-                       absolute errors in mass, and the total energy for SWE surrogates obtained
-                       from all methods at 1h and 25h.</figcaption>
-                  </figure>
-                  </div>
-             </div>
-
-            <p> In the subsequent phase of the study, an investigation was conducted into the potential for
-                generalisation to novel ICs for closed shallow water systems. Figure shows an example in which
-                these rectangles have combined to form an ‘L’ shape which is a sum of two rectangular elevations 0.1 m in
-                height, with randomly varying location and shape. As previously, we found the maximally constrained
-                model p4m/M to outperform alternatives with equal parameter counts. Additional generalization results can
-              be found in our <a style="color:blue;" href="https://openreview.net/forum?id=6f1Hx1eneF">paper</a>!
-            </p>
-
-             <figure>
-                <img src="static/images/swe_gen.jpg" alt="gfglogo" style="width:100%">
-                <figcaption style="font-size:16px;"> <b>Generalization</b> beyond training data for closed shallow water systems.
-                    (a) SWE rollouts from p1/∅ and p4m/M on L-shaped ICs are compared to reference.
-                    (b-c) Accuracy of each network over six
-                    generalization tests.</figcaption>
-             </figure>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Shallow Water System -->
-
-
-
-
-<!--2D Decaying Turbulence -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-         <h2 style="margin-top: 50px;" class="title is-3"> Experiments - 2D Decaying Turbulence</h2>
-
-          <div class="content has-text-justified">
-          <p>The incompressible Navier–Stokes equations (INS) describe momentum balance for incompressible Newtonian fluids.
-              we consider the ‘decaying turbulence’ scenario introduced by (<a style="color:blue;"
-               href="https://www.pnas.org/doi/10.1073/pnas.2101784118">Kochkov et al., 2021</a>). The velocity field is
-              initialized as filtered Gaussian noise containing high spatial frequencies. Predicting the evolution
-              of the velocity field is challenging, since eddy size and Reynolds number change over time as structures
-              in the flow field coalesce, and the velocity field becomes smoother and more uniform over time.
-          </p>
-          <p> Here we used the velocity fields [u, v] as both inputs and outputs. As for SWEs, we tested p1, p4 and p4m
-              equivariance, but now considered 3 levels of physical constraints: unconstrained (∅), momentum conservation
-              (ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math>)
-              and mass/momentum conservation (M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math>).
-          </p>
-
-           <p> Following Figure compares autoregressive rollouts from unconstrained (p1/∅) and maximally constrained networks
-               (p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-               <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math>).  We observed improvements
-               in the accuracy and stability of the INS surrogates for both types of constraints (see Fig. b–c).
-               The best results also outperformed those of networks trained with input noise.
-               To evaluate the performance of the neural surrogates beyond the point at which their predictions
-               diverge from the reference solution, we compared the power spectra of the predicted and energy
-               velocity fields as in previous studies. Furthermore,
-               we compared the performance gains from symmetries and physical constraints with those offered
-               by specialised training modes for PDE surrogates, such as data augmentation and pushforward.
-               See the following figures and tables for details.
-          </p>
-
-            <!-- many images . -->
-             <div id="results-carousel" class="carousel results-carousel">
-                 <div class="item item-image3">
-                  <figure>
-                    <img src="static/images/ins_main.jpg" alt="gfglogo" style="width:110%">
-                     <figcaption style="font-size:16px;"> <b>p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math> outperforms other networks with similar
-                         parameter counts on INS</b>. (a) Reference horizontal velocity with predictions
-                         from p1/∅ and p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math>. (b-c) Accuracy over 50h rollouts,
-                         with standard error of the mean over 30 ICs. (d-e) Log-log plots of the average velocity power
-                         spectrum and energy spectrum from 30 ICs at 59.5s. Spectra measure the strength of the chaotic
-                         field’s features for each wavenumber k (number of cycles across the domain). Both the velocity
-                         and energy spectra p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math> align best with the reference.
-                         Spectra are scaled by k<sup>5</sup>. (f) The momentum during the entire evolution time for p1/∅
-                         and all p4m models. (g) Comparison of
-                         data-augmentation (<b>DA</b>) and pushforward trick (<b>PF</b>).</figcaption>
-                  </figure>
-                  </div>
-               <div class="item item-image4">
-                  <figure>
-                    <img src="static/images/ins_table.jpg" alt="gfglogo" style="width:110%">
-                     <figcaption style="font-size:16px; width:95%; text-align: center"> The NRMSE-u of decaying turbulence at 36s
-                         and 60s for Modern U-net, DilResNet, Modern U-net with pushforward trick (PF) and Modern U-net with data
-                         augmentation (DA).</figcaption>
-                  </figure>
-                  </div>
-             </div>
-
-            <p> We tested surrogates on ICs with peak wavenumber changed from 10 to 8 or 6.
-                p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math> rollouts more
-                closely matched the reference solver and its spectra, see the following figures.
-            </p>
-
-             <figure>
-                <img src="static/images/ins_gen.jpg" alt="gfglogo" style="width:100%">
-                <figcaption style="font-size:16px;"> Generalization beyond training data for decaying turbulence.
-                    <b>Generalization</b> beyond training data. (a) INS rollouts from p1/∅ and
-                    p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math> on ICs with peak wavenumber of 8.
-                    (b-c) Velocityand energy spectra for INS at t = 99.7 s, averaged over 10 ICs.</figcaption>
-             </figure>
-
-
-             <p> We investigated how the enhancement of neural INS surrogates by symmetry physical constraints depends
-                 on the size of the network and dataset. We trained p1/∅ and p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math> networks with 0.1M, 2M and and 8.5M
-                 parameters on the same dataset (100 simulations). Training 0.1M-parameter p1/∅ and
-                 p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math> networks on
-                 datasets of 100, 400, and 760 simulations showed that constraints enhanced performance robustly across
-                 dataset size, see details in following figures.
-            </p>
-
-             <figure>
-                <img src="static/images/data_net.jpg" alt="gfglogo" style="width:110%">
-                <figcaption style="font-size:16px;"> Accuracy of symmetry- and physics-constrained INS models
-                    <b>across data and network sizes</b>, at 4.2 and 12.6 s. (ab) NRMSE-u and correlation vs. network size
-                    for p1/∅ and p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math>. (c-d) NRMSE-u and correlation
-                    for p1/∅ and p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math> vs. training datasets size.</figcaption>
-             </figure>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Decaying Turbulence -->
-
-
-
-
-<!--Real Ocean Velocity Dynamics -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-         <h2 style="margin-top: 50px;" class="title is-3"> Experiments - Real Ocean Dynamics</h2>
-
-          <div class="content has-text-justified">
-          <p>
-            The ocean current velocity data has been sourced from
-              <a style="color:blue;" href="https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/services">
-              Global Ocean Physics Analysis and Forecast</a>. The 6-hourly data from 2022-06-01 to 2025-04-05 was
-              selected for analysis in three regions from different oceans. The corresponding latitude and longitude
-              ranges for these regions are listed below: (30∼42, 168∼180), (-49∼-37, 80∼92), and (-51∼-39, -30∼-18).
-              The data set under consideration is 144×144. In order to reduce the size of the training set, it is
-              downscaled to a coarse grid of 48×48 for training, testing and validation purposes.
-          </p>
-
-          <p> Once the training of the model has been completed, the prediction is made using distinct regions and times
-              from the training data. The latitude and longitude ranges of the prediction are specified as (-44∼-32, -130∼-118),
-              and the time frame for the prediction is from 2023-06-01 to 2025-04-05.
-              The figure below provides a visual representation of the specifics.
-          </p>
-
-             <figure>
-                <img src="static/images/real_fig.jpg" alt="gfglogo" style="width:100%">
-                <figcaption style="font-size:16px;"> Accuracy of neural PDE surrogates for <b>real world ocean currents</b>.
-                    Results are shown for the unconstrained Modern U-net p1/∅, <a style="color:blue;"
-                   href="https://openreview.net/pdf?id=wta_8Hx2KD">Wang’s Equrot (Unet)</a>,
-                    and the doubly constrained network p4m/M+ρ<math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mover><mi>u</mi><mo mathsize="50%">&rarr;</mo></mover></math>. (a) Zonal ocean currents from the
-                    three surrogates
-                    reference data. (b-c) NRMSE-u and correlation for forecasts up to 300 hours in the future,
-                    averaged over 30 randomly selected initial conditions.</figcaption>
-             </figure>
-
-           <p> Furthermore, the following table shows the details of the comparison of nRMSE for zonal velocity, energy
-               spectrum error (ESE) and the correction for real ocean currents, as predicted for 12 and 120 hours.
-          </p>
-
-             <figure>
-                <img src="static/images/real_table.jpg" alt="gfglogo" style="width:85%">
-                <figcaption style="font-size:16px;"> Comparison of nRMSE for zonal velocity,
-                    energy spectrum error (ESE), and correction for <b> real ocean currents</b> predicted 12h and 120h ahead.
-                Architecture and hyperparameters for Equrot Unet are as described in <a style="color:blue;"
-                   href="https://openreview.net/pdf?id=wta_8Hx2KD">Wang’s Equrot (Unet)</a>.</figcaption>
-             </figure>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Real Ocean Velocity Dynamics -->
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 style="margin-top: 50px;" class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/rxa_x0dWbIM" frameborder="0" allow="autoplay; encrypted-media"
-                    allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-
-
-<!--&lt;!&ndash;Teaser video&ndash;&gt;-->
-<!--<section class="hero teaser">-->
-<!--  <div class="container is-max-desktop">-->
-<!--    <div class="hero-body">-->
-
-<!--      <h2 style="color:black;margin-top: 20px;" class="subtitle has-text-centered">-->
-<!--        <b>p4m/M Long Rollout of Prediction for the Shallow Water System-->
-<!--      </b></h2>-->
-
-<!--      <video style="margin-top: -24px;" poster="" id="tree" autoplay controls muted loop height="100%">-->
-<!--        &lt;!&ndash; Your video here &ndash;&gt;-->
-<!--        <source src="static/videos/swe_video.mp4"-->
-<!--        type="video/mp4">-->
-<!--      </video>-->
-
-
-<!--      <h2 style="color:black;margin-top: -5px;" class="subtitle has-text-centered">-->
-<!--        On the left-hand side is a comparison of the p4m/M rollout for surface disturbance (ζ) with the reference.-->
-<!--          The right-hand side shows the accuracy scores (NRMSE-ζ and correlation) over time.-->
-<!--      </h2>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 style="margin-top: 50px;" class="title is-3">Poster</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-
-          <figure>
-                <img src="static/images/poster.jpg" alt="gfglogo" style="width:100%">
-          </figure>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 style="margin-top: 50px;" class="title">Poster</h2>-->
-
-<!--      <iframe  src="static/pdfs/poster.pdf" width="90%" height="650">-->
-<!--          </iframe>-->
-<!--        -->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-<!--      <pre><code>BibTex Code Here</code></pre>-->
-  <pre><code>@inproceedings{huang2025geometric,
-  title={Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates},
-  author={Huang, Yunfei and Greenberg, David},
-  booktitle={International conference on machine learning},
-  year={2025},
-  organization={PMLR}
-  }</code></pre>
-
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <!-- visitor map (MapMyVisitors) -->
-  <section class="section">
-    <div class="container is-max-desktop has-text-centered">
-      <div style="display:inline-block; width:400px; max-width:100%;">
-        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=AKzaBtHpqyWPWlTu1s01yr4l7LASQkKAVXI_UFbWl1A&cl=ffffff&w=a"></script>
-      </div>
-    </div>
-  </section>
-
-  <footer style="background-image: url('static/images/background_1.jpg');" class="footer">
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
   <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p style="color:white">
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                                             target="_blank">Academic Project Page Template</a> which was adopted
-              from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page
-              in the footer. <br> This website is licensed under a
-              <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-
+    <section class="search-header">
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
       </div>
+
+      <div id="search-box">
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+      </div>
+
+    </section>
+    <section class="section-search-results">
+      <div id="search-hits">
+      </div>
+    </section>
+
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+      <a class="navbar-brand" href="/">Yunfei Huang</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+
+
+
+
+
+<!--top line  -->
+        <li class="nav-item">
+          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#research" data-target="#research"><span>Research</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks" data-target="#talks"><span>Talks</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching" data-target="#teaching"><span>Teaching</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pdf/CV_Yunfei_Huang.pdf" target="_blank" rel="noopener"><span>CV</span></a>
+        </li>
+
+<!--top line  -->
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+
+      </ul>
+
     </div>
   </div>
+</nav>
+
+<style>
+  .pp { --g:#2e7d32; --line:#e6e9ec; --muted:#5f6b76; }
+  .pp-hero { padding: 64px 0 36px; text-align: center; border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, #f4f8f4 0%, #ffffff 100%); }
+  .pp-venue { display: inline-block; font-size: .82rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--g); background: #e8f3ea; border-radius: 999px; padding: .3rem .9rem; margin-bottom: 1.2rem; }
+  .pp-hero h1 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.18; max-width: 900px; margin: 0 auto .9rem; }
+  .pp-authors { font-size: 1.18rem; margin-bottom: .3rem; }
+  .pp-authors a { font-weight: 500; }
+  .pp-affil { color: var(--muted); font-size: .98rem; margin-bottom: 1.6rem; }
+  .pp-links { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; }
+  .pp-links a { display: inline-flex; align-items: center; gap: .45rem; padding: .55rem 1.2rem; border-radius: 999px;
+    border: 1px solid var(--g); color: var(--g) !important; font-weight: 500; text-decoration: none !important;
+    transition: background .2s, color .2s; }
+  .pp-links a:hover, .pp-links a.primary { background: var(--g); color: #fff !important; }
+  .pp-links a.primary:hover { background: #1b5e20; }
+  .pp-wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  .pp-sec { padding: 56px 0; }
+  .pp-sec.alt { background: #f8f9fa; }
+  .pp-sec h2 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 2rem; position: relative;
+    padding-bottom: .6rem; margin-bottom: 1.4rem; }
+  .pp-sec h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 44px; height: 3px; border-radius: 2px; background: var(--g); }
+  .pp-sec h3 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.35rem; margin: 2rem 0 .8rem; }
+  .pp-sec p { font-size: 1.06rem; line-height: 1.8; text-align: justify; hyphens: auto; }
+  .pp-eq { text-align: center !important; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.25rem !important; margin: 1rem 0 1.2rem; }
+  .pp-fig { margin: 1.6rem 0 2rem; }
+  .pp-fig img, .pp-fig video { width: 100%; display: block; border-radius: 10px; border: 1px solid var(--line); background: #fff;
+    box-shadow: 0 6px 20px rgba(15,23,42,.06); cursor: zoom-in; }
+  .pp-fig video { cursor: default; }
+  .pp-fig figcaption { font-size: .95rem; line-height: 1.6; color: #374151; margin-top: .7rem; }
+  .pp-fig figcaption b { color: #111827; }
+  .pp-fig.narrow { max-width: 760px; margin-left: auto; margin-right: auto; }
+  .pp-teaser { padding: 40px 0 10px; }
+  .pp-teaser h3 { text-align: center; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 1.25rem; margin-bottom: .9rem; }
+  .pp-teaser figcaption { text-align: center; }
+  .pp-abstract p { font-size: 1.1rem; }
+  .pp-video { position: relative; padding-top: 56.25%; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 20px rgba(15,23,42,.08); }
+  .pp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .pp-bib { background: #0f1720; color: #e5e7eb; border-radius: 10px; padding: 1.2rem 1.4rem; font-size: .92rem; overflow-x: auto; }
+  .pp-bib code { color: inherit; background: none; }
+  .pp-sec .vec { font-style: italic; }
+  .pp-map { text-align: center; padding: 30px 0 10px; }
+  @media (max-width: 576px) { .pp-sec p { text-align: left; } .pp-sec { padding: 40px 0; } }
+</style>
+
+<div class="pp">
+
+<header class="pp-hero">
+  <div class="pp-wrap">
+    <span class="pp-venue">ICML 2025</span>
+    <h1>Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates</h1>
+    <div class="pp-authors">
+      <a href="https://yunfei-huang0.github.io/">Yunfei Huang</a><sup>1,2</sup>,
+      <a href="https://m-dml.org/index.html" target="_blank" rel="noopener">David S. Greenberg</a><sup>1,2</sup>
+    </div>
+    <div class="pp-affil"><sup>1</sup>Helmholtz-Zentrum Hereon, Geesthacht, Germany &nbsp;·&nbsp; <sup>2</sup>Helmholtz AI<br>
+      Forty-Second International Conference on Machine Learning (ICML 2025)</div>
+    <div class="pp-links">
+      <a class="primary" href="/pdf/ICML2025.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Paper</a>
+      <a href="https://openreview.net/forum?id=6f1Hx1eneF" target="_blank" rel="noopener"><i class="ai ai-open-access"></i> OpenReview</a>
+      <a href="https://github.com/m-dml/double-constraint-pde-surrogates" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+      <a href="static/pdfs/poster.pdf" target="_blank" rel="noopener"><i class="fas fa-image"></i> Poster</a>
+      <a href="https://www.youtube.com/watch?v=rxa_x0dWbIM&amp;t=295s" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> Video</a>
+      <a href="#bibtex"><i class="fas fa-quote-right"></i> BibTeX</a>
+    </div>
+  </div>
+</header>
+
+<section class="pp-teaser">
+  <div class="pp-wrap">
+    <h3>Long rollout of the p4m/M surrogate for the shallow water equations</h3>
+    <figure class="pp-fig" style="margin-top:0">
+      <video autoplay muted loop playsinline controls src="static/videos/swe_video.mp4"></video>
+      <figcaption>Left: surface elevation ζ predicted by the doubly constrained p4m/M network, compared with the numerical reference.
+        Right: accuracy over time (NRMSE-ζ and correlation).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pp-sec alt pp-abstract">
+  <div class="pp-wrap">
+    <h2>Abstract</h2>
+    <p>Neural PDE surrogates can improve the cost–accuracy trade-off of classical solvers, but often generalize poorly to new
+      initial conditions and accumulate errors over time. Physical and symmetry constraints have shown promise in closing this
+      performance gap, but existing techniques for imposing these inductive biases are incompatible with the staggered grids
+      commonly used in computational fluid dynamics. Here we introduce novel input and output layers that respect physical laws
+      and symmetries on staggered grids, and for the first time systematically investigate how these constraints, individually
+      and in combination, affect the accuracy of PDE surrogates. We focus on two challenging problems: shallow water equations
+      with closed boundaries and decaying incompressible turbulence. Compared to strong baselines, symmetries and physical
+      constraints consistently improve performance across tasks, architectures, autoregressive prediction steps, accuracy
+      measures and network sizes. Symmetries are more effective than physical constraints, but surrogates with both performed
+      best, even compared to baselines with data augmentation or pushforward training, while themselves benefiting from the
+      pushforward trick. Doubly constrained surrogates also generalize better to initial conditions and durations beyond the
+      range of the training data, and more accurately predict real-world ocean currents.</p>
+  </div>
+</section>
+
+<section class="pp-sec">
+  <div class="pp-wrap">
+    <h2>Neural PDE surrogates</h2>
+    <p>We consider time-dependent fields <i>w</i>(<i>t</i>, <i>x</i>) of a fluid system, governed by partial differential equations (PDEs) of the general form</p>
+    <p class="pp-eq">∂<sub>t</sub><i>w</i> = <i>F</i>(<i>t</i>, <i>x</i>, <i>w</i>, ∇<i>w</i>, ∇<sup>2</sup><i>w</i>, …),</p>
+    <p>together with initial and boundary conditions, where <i>t</i> denotes time and <i>x</i> space. A neural surrogate learns
+      an update operator <i>G</i> that advances the discretized fields by one time step,</p>
+    <p class="pp-eq"><i>w</i>(<i>t</i> + Δ<i>t</i>, ·) = <i>G</i>[<i>w</i>(<i>t</i>, ·)],</p>
+    <p>and is applied autoregressively to predict the long-term evolution. Training data and reference solutions are generated
+      with a numerical solver on space- and time-discretized fields.</p>
+    <figure class="pp-fig">
+      <img src="static/images/ml_p1.jpg" alt="Neural PDE surrogate predicting the time evolution of a PDE system" loading="lazy">
+      <figcaption><b>Neural PDE surrogates</b> are trained to predict the time evolution of a system of PDEs.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pp-sec alt">
+  <div class="pp-wrap">
+    <h2>Symmetry- and physics-constrained surrogates</h2>
+    <p>We assess the separate and combined benefits of symmetries and conservation laws for neural PDE surrogates. To this end,
+      we construct equivariant input layers that support staggered grids, as well as output layers that enforce both equivariance
+      and conservation laws.</p>
+    <figure class="pp-fig">
+      <img src="static/images/dauble_constrain.jpg" alt="Symmetry- and physics-constrained neural surrogate on a staggered grid" loading="lazy">
+      <figcaption><b>Symmetry- and physics-constrained neural surrogate</b> for incompressible flow on a staggered grid. A
+        rotation-equivariant input layer maps velocities onto an unstaggered regular representation, hidden layers use steerable
+        convolutions, and the equivariant output layer enforces conservation of mass and momentum as it maps back to staggered velocities.</figcaption>
+    </figure>
+    <p>The figure above shows our framework for constructing equivariant, conservative neural surrogates, using the
+      incompressible Navier–Stokes equations as an example: equivariance to translation and rotation, momentum conservation and
+      a divergence-free condition (equivalent to mass conservation). Input data on staggered grids are mapped by the new
+      equivariant input layers to convolutional channels at the grid-cell centres. All internal activations are regular
+      representations, i.e. groups of channels indexed by the symmetry group <i>G</i>, on which <i>G</i> acts by transforming
+      each spatial field and permuting the channels. This lets us use the existing
+      <a href="https://openreview.net/forum?id=WE4qe9xlnQw" target="_blank" rel="noopener">escnn</a> library for all linear maps
+      between hidden layers. Finally, new output layers map the regular representation back to the staggered grid while enforcing
+      conservation laws as hard constraints.</p>
+    <h3>Equivariant input layers</h3>
+    <figure class="pp-fig">
+      <img src="static/images/group_input.jpg" alt="Action of the rotation-equivariant input layer" loading="lazy">
+      <figcaption>Action of the <b>rotation-equivariant input layer</b> on staggered velocity fields (top left). The filter bank is
+        transformed by each <i>g</i> ∈ <i>G</i> to compute a <i>G</i>-indexed regular representation <i>y</i>. Rotating the input
+        (bottom left) yields permuted, rotated output channels.</figcaption>
+    </figure>
+    <figure class="pp-fig">
+      <img src="static/images/group_net.jpg" alt="Equivariance test of neural PDE surrogates" loading="lazy">
+      <figcaption><b>Equivariance of neural PDE surrogates</b> with the specialized input layers for C-grid velocity fields. All
+        networks use the same modern U-Net architecture and were tested for equivariance at random initialization, without training.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pp-sec">
+  <div class="pp-wrap">
+    <h2>Experiment 1: 2D shallow water equations</h2>
+    <p>The shallow water equations (SWEs) describe quasi-static motion of a homogeneous incompressible fluid with a free surface.
+      We study the nonlinear SWEs in momentum- and mass-conservative form; full details are given in the
+      <a href="https://openreview.net/forum?id=6f1Hx1eneF" target="_blank" rel="noopener">paper</a>.</p>
+    <p>We use a hybrid learning strategy, based on the observation that the semi-implicit numerical scheme computes
+      ζ<sup><i>t</i>+1</sup> slowly with an iterative solver, but then obtains [<i>u</i><sup><i>t</i>+1</sup>, <i>v</i><sup><i>t</i>+1</sup>]
+      from ζ<sup><i>t</i>+1</sup> quickly through an explicit formula. The surrogates therefore predict only ζ<sup><i>t</i>+1</sup>, and the
+      velocities are computed from it. Keeping parameter counts constant, we compare networks equivariant to three symmetry groups:
+      p1 (translation only, as in standard CNNs), p4 (translation and rotation) and p4m (translation, rotation and reflection).
+      We also compare mass-conserving networks (M) with networks without physical constraints (∅), as well as unconstrained FNO and
+      DilResNet architectures.</p>
+    <figure class="pp-fig">
+      <img src="static/images/swe_mian.jpg" alt="Results for the shallow water equations" loading="lazy">
+      <figcaption><b>p4m/M outperforms other networks with similar parameter counts on the SWEs.</b> (a) Reference surface
+        elevation ζ with predictions from p1/∅ and p4m/M. (b–c) Accuracy over 50 h rollouts, with standard error of the mean over
+        20 initial conditions (ICs). (d) Training loss over iterations. (e) Histogram of E<sub><i>t</i></sub>NRMSE over 20 ICs.
+        (f) Violation of mass conservation for all methods. (g) High-correlation times for each model.</figcaption>
+    </figure>
+    <figure class="pp-fig">
+      <img src="static/images/swe_table.jpg" alt="Table of SWE results" loading="lazy">
+      <figcaption>NRMSE-ζ, correlation, mean absolute error in mass and total energy for all SWE surrogates at 1 h and 25 h.</figcaption>
+    </figure>
+    <h3>Generalization to new initial conditions</h3>
+    <p>We next tested generalization to new kinds of initial conditions for closed shallow water systems. In the example below,
+      two rectangular elevations of 0.1 m height, with random location and shape, combine into an “L” shape. Again, the maximally
+      constrained model p4m/M outperforms the alternatives with equal parameter counts. Further generalization results are in the
+      <a href="https://openreview.net/forum?id=6f1Hx1eneF" target="_blank" rel="noopener">paper</a>.</p>
+    <figure class="pp-fig">
+      <img src="static/images/swe_gen.jpg" alt="Generalization results for the shallow water equations" loading="lazy">
+      <figcaption><b>Generalization</b> beyond the training data for closed shallow water systems. (a) Rollouts from p1/∅ and
+        p4m/M on L-shaped ICs compared with the reference. (b–c) Accuracy of each network over six generalization tests.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pp-sec alt">
+  <div class="pp-wrap">
+    <h2>Experiment 2: 2D decaying turbulence</h2>
+    <p>The incompressible Navier–Stokes equations (INS) describe momentum balance for incompressible Newtonian fluids. We consider
+      the “decaying turbulence” scenario of <a href="https://www.pnas.org/doi/10.1073/pnas.2101784118" target="_blank" rel="noopener">Kochkov et al. (2021)</a>:
+      the velocity field is initialized as filtered Gaussian noise with high spatial frequencies. Predicting its evolution is
+      challenging, because eddy size and Reynolds number change over time as structures coalesce and the flow becomes smoother
+      and more uniform.</p>
+    <p>Here the velocity fields [<i>u</i>, <i>v</i>] are both inputs and outputs. As for the SWEs, we test p1, p4 and p4m
+      equivariance, now with three levels of physical constraints: unconstrained (∅), momentum conservation
+      (ρ<span class="vec">u⃗</span>) and mass plus momentum conservation (M+ρ<span class="vec">u⃗</span>).</p>
+    <p>The figure below compares autoregressive rollouts from the unconstrained (p1/∅) and the maximally constrained
+      (p4m/M+ρ<span class="vec">u⃗</span>) networks. Both types of constraints improve the accuracy and stability of the INS
+      surrogates (panels b–c), and the best results also outperform networks trained with input noise. To evaluate the surrogates
+      beyond the point where their predictions diverge from the reference, we compare the velocity and energy power spectra of the
+      predicted fields, as in previous studies. We also compare the gains from symmetries and physical constraints with those of
+      specialized training methods for PDE surrogates: data augmentation and the pushforward trick.</p>
+    <figure class="pp-fig">
+      <img src="static/images/ins_main.jpg" alt="Results for decaying turbulence" loading="lazy">
+      <figcaption><b>p4m/M+ρ<span class="vec">u⃗</span> outperforms other networks with similar parameter counts on INS.</b>
+        (a) Reference horizontal velocity with predictions from p1/∅ and p4m/M+ρ<span class="vec">u⃗</span>. (b–c) Accuracy over
+        rollouts, with standard error of the mean over 30 ICs. (d–e) Log–log plots of the average velocity and energy spectra over
+        30 ICs at 59.5 s; spectra measure the strength of the flow's features at each wavenumber <i>k</i> (number of cycles across
+        the domain) and are scaled by <i>k</i><sup>5</sup>. For both spectra, p4m/M+ρ<span class="vec">u⃗</span> agrees best with
+        the reference. (f) Momentum over the whole simulation for p1/∅ and all p4m models. (g) Comparison with data augmentation
+        (<b>DA</b>) and the pushforward trick (<b>PF</b>).</figcaption>
+    </figure>
+    <figure class="pp-fig">
+      <img src="static/images/ins_table.jpg" alt="Table of decaying turbulence results" loading="lazy">
+      <figcaption>NRMSE-<i>u</i> for decaying turbulence at 36 s and 60 s for the modern U-Net, DilResNet, and the modern U-Net
+        trained with the pushforward trick (PF) or with data augmentation (DA).</figcaption>
+    </figure>
+    <h3>Generalization and scaling</h3>
+    <p>We tested the surrogates on ICs with the peak wavenumber changed from 10 to 8 or 6. Rollouts of
+      p4m/M+ρ<span class="vec">u⃗</span> match the reference solver and its spectra more closely.</p>
+    <figure class="pp-fig">
+      <img src="static/images/ins_gen.jpg" alt="Generalization results for decaying turbulence" loading="lazy">
+      <figcaption><b>Generalization</b> beyond the training data for decaying turbulence. (a) Rollouts from p1/∅ and
+        p4m/M+ρ<span class="vec">u⃗</span> on ICs with peak wavenumber 8. (b–c) Velocity and energy spectra at <i>t</i> = 99.7 s,
+        averaged over 10 ICs.</figcaption>
+    </figure>
+    <p>We also studied how the benefit of symmetry and physical constraints depends on network and dataset size. We trained p1/∅
+      and p4m/M+ρ<span class="vec">u⃗</span> networks with 0.1 M, 2 M and 8.5 M parameters on the same dataset (100 simulations),
+      and 0.1 M-parameter networks on datasets of 100, 400 and 760 simulations. The constraints improved performance robustly
+      across all network and dataset sizes.</p>
+    <figure class="pp-fig">
+      <img src="static/images/data_net.jpg" alt="Accuracy across data and network sizes" loading="lazy">
+      <figcaption>Accuracy of symmetry- and physics-constrained INS models <b>across data and network sizes</b>, at 4.2 s and
+        12.6 s. (a–b) NRMSE-<i>u</i> and correlation vs. network size. (c–d) NRMSE-<i>u</i> and correlation vs. training-set size.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pp-sec">
+  <div class="pp-wrap">
+    <h2>Experiment 3: real ocean currents</h2>
+    <p>Ocean current velocities were taken from the
+      <a href="https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/services" target="_blank" rel="noopener">Copernicus Global Ocean Physics Analysis and Forecast</a>
+      product. We used 6-hourly data from 2022-06-01 to 2025-04-05 in three regions of different oceans, with latitude/longitude
+      ranges (30–42°, 168–180°), (−49 to −37°, 80–92°) and (−51 to −39°, −30 to −18°). The 144×144 fields were coarsened to a
+      48×48 grid for training, validation and testing.</p>
+    <p>After training, the models were evaluated on a region and period not seen in training: latitude −44 to −32° and
+      longitude −130 to −118°, from 2023-06-01 to 2025-04-05.</p>
+    <figure class="pp-fig">
+      <img src="static/images/real_fig.jpg" alt="Forecasts of real ocean currents" loading="lazy">
+      <figcaption>Accuracy of neural PDE surrogates for <b>real-world ocean currents</b>, for the unconstrained modern U-Net
+        (p1/∅), <a href="https://openreview.net/pdf?id=wta_8Hx2KD" target="_blank" rel="noopener">Wang et al.'s EquRot U-Net</a>,
+        and the doubly constrained network p4m/M+ρ<span class="vec">u⃗</span>. (a) Zonal ocean currents predicted by the three
+        surrogates and the reference data. (b–c) NRMSE-<i>u</i> and correlation for forecasts up to 300 h ahead, averaged over
+        30 randomly selected initial conditions.</figcaption>
+    </figure>
+    <figure class="pp-fig narrow">
+      <img src="static/images/real_table.jpg" alt="Table of ocean current results" loading="lazy">
+      <figcaption>NRMSE of the zonal velocity, energy spectrum error (ESE) and correlation for real ocean currents predicted
+        12 h and 120 h ahead. The EquRot U-Net uses the architecture and hyperparameters of
+        <a href="https://openreview.net/pdf?id=wta_8Hx2KD" target="_blank" rel="noopener">Wang et al.</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pp-sec alt">
+  <div class="pp-wrap">
+    <h2>Video presentation</h2>
+    <div class="pp-video">
+      <iframe src="https://www.youtube.com/embed/rxa_x0dWbIM" title="Video presentation" loading="lazy"
+              allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="pp-sec">
+  <div class="pp-wrap">
+    <h2>Poster</h2>
+    <figure class="pp-fig">
+      <img src="static/images/poster.jpg" alt="ICML 2025 poster" loading="lazy">
+      <figcaption>ICML 2025 poster, Vancouver. <a href="static/pdfs/poster.pdf" target="_blank" rel="noopener">Download the PDF</a>.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="pp-sec alt" id="bibtex">
+  <div class="pp-wrap">
+    <h2>BibTeX</h2>
+<pre class="pp-bib"><code>@inproceedings{huang2025geometric,
+  title     = {Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates},
+  author    = {Huang, Yunfei and Greenberg, David S.},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  year      = {2025},
+  publisher = {PMLR}
+}</code></pre>
+  </div>
+</section>
+
+<section class="pp-map">
+  <div style="display:inline-block; width:400px; max-width:100%;">
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=AKzaBtHpqyWPWlTu1s01yr4l7LASQkKAVXI_UFbWl1A&cl=ffffff&w=a"></script>
+  </div>
+</section>
+
+</div>
+
+<!-- click a figure to enlarge -->
+<div class="figzoom" id="ppzoom"><button class="figzoom-close" aria-label="Close">&times;</button><img alt=""><p class="figzoom-cap"></p></div>
+<script>
+(function(){var z=document.getElementById('ppzoom'),im=z.querySelector('img'),cap=z.querySelector('.figzoom-cap');
+document.querySelectorAll('.pp-fig img').forEach(function(i){i.addEventListener('click',function(){im.src=i.src;var f=i.closest('figure').querySelector('figcaption');cap.textContent=f?f.textContent.replace(/\s+/g,' ').trim():'';z.classList.add('open');document.body.style.overflow='hidden';});});
+function c(){z.classList.remove('open');document.body.style.overflow='';}
+z.addEventListener('click',function(e){if(e.target!==im)c();});document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();
+</script>
+
+
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
 </footer>
 
-<!-- Statcounter tracking code -->
+  </div>
   
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  </body>
-  </html>
+<script src="/js/polish.js?v=2"></script>
+</body>
+</html>
