@@ -41,6 +41,8 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var c = document.createElement('canvas'); c.id = 'ac-net'; c.setAttribute('aria-hidden', 'true');
   document.body.insertBefore(c, document.body.firstChild);
+  var pan = document.createElement('div'); pan.id = 'ac-panel'; pan.setAttribute('aria-hidden', 'true');
+  document.body.insertBefore(pan, c.nextSibling);
   var ctx = c.getContext('2d'), W, H, dpr = Math.min(window.devicePixelRatio || 1, 2), pts = [], mouse = { x: -9999, y: -9999 };
   function init() {
     W = window.innerWidth; H = window.innerHeight; c.width = W * dpr; c.height = H * dpr;
@@ -58,14 +60,14 @@
       if (!reduce) { a.x += a.vx; a.y += a.vy; if (a.x < 0 || a.x > W) a.vx *= -1; if (a.y < 0 || a.y > H) a.vy *= -1; }
       for (var j = i + 1; j < pts.length; j++) {
         var b = pts[j], dx = a.x - b.x, dy = a.y - b.y, d = dx * dx + dy * dy;
-        if (d < L2) { ctx.strokeStyle = 'rgba(46,125,50,' + (0.16 * (1 - Math.sqrt(d) / L)).toFixed(3) + ')'; ctx.lineWidth = 1;
+        if (d < L2) { ctx.strokeStyle = 'rgba(46,125,50,' + (0.28 * (1 - Math.sqrt(d) / L)).toFixed(3) + ')'; ctx.lineWidth = 1;
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); }
       }
       var mx = a.x - mouse.x, my = a.y - mouse.y, md = mx * mx + my * my;
-      if (md < 180 * 180) { ctx.strokeStyle = 'rgba(46,125,50,' + (0.22 * (1 - Math.sqrt(md) / 180)).toFixed(3) + ')';
+      if (md < 180 * 180) { ctx.strokeStyle = 'rgba(46,125,50,' + (0.32 * (1 - Math.sqrt(md) / 180)).toFixed(3) + ')';
         ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke(); }
     }
-    for (var k = 0; k < pts.length; k++) { var p = pts[k]; ctx.fillStyle = p.g ? 'rgba(46,125,50,.45)' : 'rgba(100,116,139,.38)';
+    for (var k = 0; k < pts.length; k++) { var p = pts[k]; ctx.fillStyle = p.g ? 'rgba(46,125,50,.65)' : 'rgba(100,116,139,.55)';
       ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.2832); ctx.fill(); }
     if (running && !reduce) requestAnimationFrame(frame);
   }

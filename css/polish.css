@@ -196,7 +196,7 @@ body.dark .ac-cc b, body.dark .home-section .section-heading h1 { color: #e5e7eb
 
 /* ---------- connected-dots background ---------- */
 #ac-net { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
-body > *:not(#ac-net):not(.figzoom):not(#navbar-main):not(.search-results):not(.modal) { position: relative; z-index: 1; }
+body > *:not(#ac-net):not(#ac-panel):not(.figzoom):not(#navbar-main):not(.search-results):not(.modal) { position: relative; z-index: 1; }
 #navbar-main { z-index: 1030; }
 .home-section, #research, #talks, #teaching, #publications, #contact, #about { background: transparent !important; }
 #research, #talks, #teaching { background: rgba(246, 248, 247, .55) !important; }
@@ -206,3 +206,17 @@ body > *:not(#ac-net):not(.figzoom):not(#navbar-main):not(.search-results):not(.
 .rc-card, #talks .media.stream-item, .ac-hl, .ac-cc, .pub-thumb, .pp-fig img { background-color: #fff; }
 .pub-list-item:hover { background: rgba(246,250,246,.9) !important; }
 body.dark #ac-net { opacity: .5; }
+
+/* ---------- white "paper" column; network visible in the margins ---------- */
+body { background: #f3f5f4; }
+#ac-panel { position: fixed !important; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); width: min(1260px, 100%);
+  background: #fff; box-shadow: 0 0 40px rgba(15, 23, 42, .08); z-index: 0; pointer-events: none; }
+body > *:not(#ac-net):not(#ac-panel):not(.figzoom):not(#navbar-main):not(.search-results):not(.modal) { position: relative; z-index: 1; }
+.home-section, #research, #talks, #teaching, #publications, #contact, #about,
+.pp-hero, .pp-sec, .pp-sec.alt, #visitors { background: transparent !important; }
+.home-section + .home-section, .pp-sec + .pp-sec { border-top: 1px solid #eef0f2; }
+.pp-hero { border-bottom: 0; }
+.site-footer { border-top: 1px solid #eef0f2; }
+@media (max-width: 1260px) { #ac-panel { box-shadow: none; } }
+body.dark { background: #0f1317; }
+body.dark #ac-panel { background: #161a1f; box-shadow: 0 0 40px rgba(0,0,0,.4); }
