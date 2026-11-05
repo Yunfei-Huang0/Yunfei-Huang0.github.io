@@ -408,15 +408,6 @@
 
 
 
-<div class="pub-toolbar">
-  <input type="search" class="pf-search" id="home-pub-search" placeholder="Search..." aria-label="Search publications">
-  <select class="pf-select" id="home-pub-type" aria-label="Filter by type">
-    <option value="">Type</option><option value="conference">Conference paper</option><option value="journal">Journal article</option>
-    <option value="preprint">Preprint</option><option value="thesis">Thesis</option>
-  </select>
-  <select class="pf-select" id="home-pub-year" aria-label="Filter by year"><option value="">Date</option></select>
-</div>
-<p class="pub-none" id="home-pub-none" hidden>No publications match.</p>
 
 <!--   paper 2026 -->
  <div class="pub-list-item has-thumb" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
@@ -777,32 +768,7 @@
 </div>
 </div>
 
-<script>
-(function(){
-  var sec=document.getElementById('publications'); if(!sec) return;
-  var items=[].slice.call(sec.querySelectorAll('.pub-list-item'));
-  var q=document.getElementById('home-pub-search'), ty=document.getElementById('home-pub-type'), yr=document.getElementById('home-pub-year'), none=document.getElementById('home-pub-none');
-  var years={};
-  items.forEach(function(it){
-    var txt=it.textContent.replace(/\s+/g,' ');
-    var m=txt.match(/\((\d{4})\)/); it.dataset.year=m?m[1]:'';
-    if(m) years[m[1]]=1;
-    var low=txt.toLowerCase(), type='journal';
-    if(/thesis/.test(low)) type='thesis'; else if(/arxiv|preprint|authorea|ess open/.test(low)) type='preprint'; else if(/conference|icml|proceedings/.test(low)) type='conference';
-    it.dataset.type=type; it.dataset.text=low;
-  });
-  Object.keys(years).sort().reverse().forEach(function(y){var o=document.createElement('option');o.value=y;o.textContent=y;yr.appendChild(o);});
-  function apply(){
-    var s=q.value.trim().toLowerCase(), n=0;
-    items.forEach(function(it){
-      var ok=(!s||it.dataset.text.indexOf(s)>=0)&&(!ty.value||it.dataset.type===ty.value)&&(!yr.value||it.dataset.year===yr.value);
-      it.style.display=ok?'':'none'; if(ok)n++;
-    });
-    none.hidden=n>0;
-  }
-  q.addEventListener('input',apply); ty.addEventListener('change',apply); yr.addEventListener('change',apply);
-})();
-</script>
+
 </section>
 <!--  section publications end -->
 
