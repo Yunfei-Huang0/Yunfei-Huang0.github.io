@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
   <link rel="stylesheet" href="/css/academic.min.2f3ad830d0a64bf8a36a9a54cc63fcc3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-  <link rel="stylesheet" href="/css/polish.css?v=15">
+  <link rel="stylesheet" href="/css/polish.css?v=17">
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Yunfei Huang">
   <link rel="feed" href="/index.xml" type="application/rss+xml" title="Yunfei Huang">
   <link rel="manifest" href="/site.webmanifest">
@@ -405,6 +405,16 @@
 
 
 
+<div class="pub-toolbar">
+  <input type="search" class="filter-search" id="home-pub-search" placeholder="Search..." aria-label="Search publications">
+  <select class="pub-filters" id="home-pub-type" aria-label="Filter by type">
+    <option value="">Type</option><option value="conference">Conference paper</option><option value="journal">Journal article</option>
+    <option value="preprint">Preprint</option><option value="thesis">Thesis</option>
+  </select>
+  <select class="pub-filters" id="home-pub-year" aria-label="Filter by year"><option value="">Date</option></select>
+</div>
+<p class="pub-none" id="home-pub-none" hidden>No publications match.</p>
+
 <!--   paper 2026 -->
  <div class="pub-list-item has-thumb" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
 <a class="pub-thumb js-figzoom" href="/img/pubs/full/arxiv2026.jpg?v=2" title="Click to enlarge the figure"><img src="/img/pubs/arxiv2026.jpg?v=4" alt="Figure from the paper" loading="lazy"></a>
@@ -763,6 +773,33 @@
 </div>
 </div>
 </div>
+
+<script>
+(function(){
+  var sec=document.getElementById('publications'); if(!sec) return;
+  var items=[].slice.call(sec.querySelectorAll('.pub-list-item'));
+  var q=document.getElementById('home-pub-search'), ty=document.getElementById('home-pub-type'), yr=document.getElementById('home-pub-year'), none=document.getElementById('home-pub-none');
+  var years={};
+  items.forEach(function(it){
+    var txt=it.textContent.replace(/\s+/g,' ');
+    var m=txt.match(/\((\d{4})\)/); it.dataset.year=m?m[1]:'';
+    if(m) years[m[1]]=1;
+    var low=txt.toLowerCase(), type='journal';
+    if(/thesis/.test(low)) type='thesis'; else if(/arxiv|preprint|authorea|ess open/.test(low)) type='preprint'; else if(/conference|icml|proceedings/.test(low)) type='conference';
+    it.dataset.type=type; it.dataset.text=low;
+  });
+  Object.keys(years).sort().reverse().forEach(function(y){var o=document.createElement('option');o.value=y;o.textContent=y;yr.appendChild(o);});
+  function apply(){
+    var s=q.value.trim().toLowerCase(), n=0;
+    items.forEach(function(it){
+      var ok=(!s||it.dataset.text.indexOf(s)>=0)&&(!ty.value||it.dataset.type===ty.value)&&(!yr.value||it.dataset.year===yr.value);
+      it.style.display=ok?'':'none'; if(ok)n++;
+    });
+    none.hidden=n>0;
+  }
+  q.addEventListener('input',apply); ty.addEventListener('change',apply); yr.addEventListener('change',apply);
+})();
+</script>
 </section>
 <!--  section publications end -->
 
@@ -802,209 +839,179 @@
 <h1>Talks</h1>
 </div>
 <div class="col-12 col-lg-8">
+<div class="talks-list">
+<!-- 2026 -->
+      <div class="row">
+        <div class="col-lg-2">
+          <h3>2026</h3>
+        </div>
+        <div class="col-lg-10">
+
+<div class="view-list-item" itemscope itemtype="http://schema.org/Event">
+  <i class="far fa-calendar-alt pub-icon" aria-hidden="true"></i>
+  <a href="/pdf/Poster_DPG_2026.pdf?v=3" target="_blank" rel="noopener"><span itemprop="name">Combined Information for Traction Force Reconstruction Using Metadata with a Vision Transformer–Convolutional Network</span></a>
+  <div class="article-metadata">
+    <span itemprop="startDate">
+      2026
+    </span>
+    <span class="middot-divider"></span>
+    <span itemprop="location"><a>DPG Spring Meeting (SKM)</a>. <a>Poster</a></span>
+    <span class="middot-divider"></span>
+    <span itemprop="location">Dresden</span>
+    <span class="middot-divider"></span>
+    <span itemprop="location">Germany</span>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+<!-- 2025 -->
+      <div class="row">
+        <div class="col-lg-2">
+          <h3>2025</h3>
+        </div>
+        <div class="col-lg-10">
+
+<div class="view-list-item" itemscope itemtype="http://schema.org/Event">
+  <i class="far fa-calendar-alt pub-icon" aria-hidden="true"></i>
+  <a href="/project/icml2025/"><span itemprop="name">Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates</span></a>
+  <div class="article-metadata">
+    <span itemprop="startDate">
+      2025
+    </span>
+    <span class="middot-divider"></span>
+    <span itemprop="location"><a>International Conference on Machine Learning (ICML)</a>. <a>Poster</a></span>
+    <span class="middot-divider"></span>
+    <span itemprop="location">Vancouver</span>
+    <span class="middot-divider"></span>
+    <span itemprop="location">Canada</span>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+<!-- 2024 -->
+      <div class="row" >
+        <div class="col-lg-2">
+          <h3>2024</h3>
+        </div>
+        <div class="col-lg-10">
 
 
-<!--talk DPG 2026-->
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-<div class="media-body">
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/pdf/Poster_DPG_2026.pdf?v=3" target="_blank" rel="noopener">Combined Information for Traction Force Reconstruction Using Metadata with a Vision Transformer–Convolutional Network</a>
-    </h3>
-    <div class="article-style" itemprop="articleBody">
-      <a>DPG Spring Meeting of the Condensed Matter Section (SKM)</a>. <a>Poster</a>
-    </div>
-    <div class="stream-meta article-metadata">
-      <div>
-        <span itemprop="startDate">
-          2026
-        </span>
+<div class="view-list-item" itemscope itemtype="http://schema.org/Event">
+  <i class="far fa-calendar-alt pub-icon" aria-hidden="true"></i>
+  <a><span itemprop="name">Accurate Long Rollouts of Fluid Dynamics Achieved
+        by Symmetrically-physically Constrained Neural PDE Solvers</span></a>
+  <div class="article-metadata">
+    <span itemprop="startDate">
+      2024
+    </span>
+    <span class="middot-divider"></span>
+    <span itemprop="location"><a>Helmholtz AI FFT monthly seminar</a>. <a>Invited talk</a></span>
+    <span class="middot-divider"></span>
+    <span itemprop="location">Online</span>
+  </div>
+</div>
+
+
+
+<div class="view-list-item" itemscope itemtype="http://schema.org/Event">
+  <i class="far fa-calendar-alt pub-icon" aria-hidden="true"></i>
+  <a>Project on “EmbryoFlowTracker”</a>
+  <div class="article-metadata"><span itemprop="location"><a>CENTURI Hackathon</a>. <a>Project participant</a></span></div>
+  
+  <div class="article-metadata">
+    <span itemprop="startDate">
+    2024
+    </span>
+    
+    <span class="middot-divider"></span>
+    <span itemprop="location"><span itemprop="location">Marseille</span>
         <span class="middot-divider"></span>
-        <span itemprop="location">Dresden</span>
+        <span itemprop="location">France</span></span>
+
+</div>
+</div>
+
+</div>
+</div>
+<!-- 2024 end -->
+
+
+
+
+
+<!-- 2023 -->
+<div class="row" >
+<div class="col-lg-2">
+<h3>2023</h3>
+</div>
+<div class="col-lg-10">
+
+
+
+<div class="view-list-item" itemscope itemtype="http://schema.org/Event">
+  <i class="far fa-calendar-alt pub-icon" aria-hidden="true"></i>
+  <a>Symmetry Constraints Enhance Long-term Stability and Accuracy in Unsupervised Learning of Geophysical Fluid Flows</a>
+
+  <div class="article-metadata">
+    <span itemprop="startDate">
+    2023
+    </span>
+
+    <span class="middot-divider"></span>
+    <span itemprop="location"><a>Helmholtz AI Conference</a>. <a>Talk</a></span>
+    <span class="middot-divider"></span>
+    <span itemprop="location"><span itemprop="location">Hamburg</span>
         <span class="middot-divider"></span>
         <span itemprop="location">Germany</span>
-      </div>
-    </div>
-    <div class="btn-links">
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/Poster_DPG_2026.pdf?v=3" target="_blank" rel="noopener">Poster</a>
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2603.13400" target="_blank" rel="noopener">Paper</a>
+    </span>
+
+  </div>
+</div>
+
 </div>
 </div>
-<div class="ml-3">
-</div>
-</div>
-<!--talk DPG 2026 end -->
+<!-- 2023  end -->
 
 
-<!--talk ICML 2025-->
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-<div class="media-body">
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/project/icml2025/">Geometric and Physical Constraints Synergistically Enhance Neural PDE Surrogates</a>
-    </h3>
-    <div class="article-style" itemprop="articleBody">
-      <a>International Conference on Machine Learning (ICML)</a>. <a>Poster</a>
-    </div>
-    <div class="stream-meta article-metadata">
-      <div>
-        <span itemprop="startDate">
-          2025
-        </span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">Vancouver</span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">Canada</span>
-      </div>
-    </div>
-    <div class="btn-links">
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/icml2025/static/pdfs/poster.pdf" target="_blank" rel="noopener">Poster</a>
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/icml2025/" target="_blank" rel="noopener">Project</a>
-</div>
-</div>
-<div class="ml-3">
-</div>
-</div>
-<!--talk ICML 2025 end -->
 
 
-<!--talk 1-->
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-<div class="media-body">
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a>Accurate Long Rollouts of Fluid Dynamics Achieved
-        by Symmetrically-physically Constrained Neural PDE Solvers</a>
-    </h3>
-    <div class="article-style" itemprop="articleBody">
-      <a>Helmholtz AI FFT monthly seminar</a>.  <a>Invited talk</a>
-    </div>
-    <div class="stream-meta article-metadata">
-      <div>
-        <span itemprop="startDate">
-          2024
-        </span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">Online</span>
-      </div>
-    </div>
-    <div class="btn-links">
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/Helmholtz_AI_1.pdf" target="_blank" rel="noopener">Slides</a>
-<!--<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://neurips.cc/virtual/2022/competition/50085" target="_blank" rel="noopener">-->
-<!--  Video-->
-<!--</a>-->
+<!-- 2020 -->
+<div class="row" >
+<div class="col-lg-2">
+<h3>2020</h3>
 </div>
-</div>
-<div class="ml-3">
-</div>
-</div>
-<!--talk 1 end -->
+<div class="col-lg-10">
 
 
-<!--talk 3-->
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-<div class="media-body">
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a>Project on “EmbryoFlowTracker”</a>
-    </h3>
-    <div class="article-style" itemprop="articleBody">
-      <a>CENTURI Hackathon</a>. <a>Project participant</a>
-    </div>
-    <div class="stream-meta article-metadata">
-      <div>
-        <span itemprop="startDate">
-          2024
-        </span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">Marseille</span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">France</span>
-      </div>
-    </div>
-    <div class="btn-links">
-
-<!--<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/Helmholtz_AI2.pdf" target="_blank" rel="noopener">Slides</a>-->
-<!--<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://neurips.cc/virtual/2022/competition/50085" target="_blank" rel="noopener">-->
-<!--  Video-->
-<!--</a>-->
-</div>
-</div>
-<div class="ml-3">
-</div>
-</div>
-<!--talk 3 end -->
 
 
-<!--talk 2-->
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-<div class="media-body">
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a>Symmetry Constraints Enhance Long-term Stability and Accuracy in Unsupervised Learning of Geophysical Fluid Flows</a>
-    </h3>
-    <div class="article-style" itemprop="articleBody">
-      <a>Helmholtz AI Conference</a>. <a>Talk</a>
-    </div>
-    <div class="stream-meta article-metadata">
-      <div>
-        <span itemprop="startDate">
-          2023
-        </span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">Hamburg</span>
+<div class="view-list-item" itemscope itemtype="http://schema.org/Event">
+  <i class="far fa-calendar-alt pub-icon" aria-hidden="true"></i>
+  <a>Advanced data analysis for traction force microscopy and data-driven discovery of physical equations</a>
+
+  <div class="article-metadata">
+    <span itemprop="startDate">
+    2020
+    </span>
+
+    <span class="middot-divider"></span>
+    <span itemprop="location"><a>PhD defence</a>. <a>Talk</a></span>
+    <span class="middot-divider"></span>
+    <span itemprop="location"><span itemprop="location">University of Cologne</span>
         <span class="middot-divider"></span>
         <span itemprop="location">Germany</span>
-      </div>
-    </div>
-    <div class="btn-links">
+    </span>
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/Helmholtz_AI2.pdf" target="_blank" rel="noopener">Slides</a>
-<!--<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://neurips.cc/virtual/2022/competition/50085" target="_blank" rel="noopener">-->
-<!--  Video-->
-<!--</a>-->
+  </div>
 </div>
 </div>
-<div class="ml-3">
 </div>
+<!-- 2020  end -->
 </div>
-<!--talk 2 end -->
-
-<!--talk 4-->
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-<div class="media-body">
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a>Advanced data analysis for traction force microscopy and data-driven discovery of physical equations</a>
-    </h3>
-    <div class="article-style" itemprop="articleBody">
-      <a>PhD defence</a>. <a>Talk</a>
-    </div>
-    <div class="stream-meta article-metadata">
-      <div>
-        <span itemprop="startDate">
-          2020
-        </span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">University of Cologne</span>
-        <span class="middot-divider"></span>
-        <span itemprop="location">Germany</span>
-      </div>
-    </div>
-    <div class="btn-links">
-
-<!--<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/pdf/Helmholtz_AI2.pdf" target="_blank" rel="noopener">Slides</a>-->
-<!--<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://neurips.cc/virtual/2022/competition/50085" target="_blank" rel="noopener">-->
-<!--  Video-->
-<!--</a>-->
-</div>
-</div>
-<div class="ml-3">
-</div>
-</div>
-<!--talk 4 end -->
-
-<!--    <div class="see-all">-->
-<!--      <a href="/talk/">-->
-<!--        See all talks-->
-<!--        <i class="fas fa-angle-right"></i>-->
-<!--      </a>-->
-<!--    </div>-->
 </div>
 </div>
 </div>

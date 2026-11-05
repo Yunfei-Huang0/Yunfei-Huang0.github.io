@@ -264,3 +264,12 @@ body.dark #ac-panel { background: #161a1f; box-shadow: 0 0 40px rgba(0,0,0,.4); 
 #talks .stream-meta { font-size: .85rem; }
 #talks .btn-links { margin-top: .4rem; }
 body.dark #talks .media.stream-item::before { background: #161a1f; }
+
+/* homepage publication toolbar + talks list (match the separate pages) */
+.pub-toolbar { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 1.6rem; }
+.pub-toolbar input { flex: 1 1 220px; max-width: 320px; }
+.pub-toolbar select { flex: 0 0 auto; }
+.pub-none { color: var(--ac-muted); }
+#talks .talks-list .col-lg-2 h3 { font-family: var(--ac-serif); color: var(--ac-green); font-size: 1.5rem; margin-top: .9rem; }
+#talks .talks-list > .row { margin-bottom: .2rem; }
+.pub-toolbar select, .pub-toolbar input { background: #fff !important; }
