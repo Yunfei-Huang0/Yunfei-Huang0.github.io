@@ -273,3 +273,14 @@ body.dark #talks .media.stream-item::before { background: #161a1f; }
 #talks .talks-list .col-lg-2 h3 { font-family: var(--ac-serif); color: var(--ac-green); font-size: 1.5rem; margin-top: .9rem; }
 #talks .talks-list > .row { margin-bottom: .2rem; }
 .pub-toolbar select, .pub-toolbar input { background: #fff !important; }
+
+/* Publications & Talks laid out like Research */
+#publications .rc-head, #talks .rc-head { margin-bottom: 1.6rem; }
+#publications .rc-intro, #talks .rc-intro { color: #4b5563; font-size: 1.1rem; line-height: 1.75; margin-top: 1rem; max-width: 900px; }
+#publications .sec-full .pub-thumb { flex-basis: 300px; }
+#talks .sec-full .talks-list .col-lg-2 { flex: 0 0 140px; max-width: 140px; }
+#talks .sec-full .talks-list .col-lg-10 { flex: 1; max-width: none; }
+@media (max-width: 767px) {
+  #talks .sec-full .talks-list .col-lg-2 { flex: 0 0 64px; max-width: 64px; padding-right: 0; }
+  #talks .sec-full .talks-list .col-lg-2 h3 { font-size: 1.15rem; }
+}
