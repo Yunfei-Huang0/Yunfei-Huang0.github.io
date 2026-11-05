@@ -193,3 +193,16 @@ a.ac-cc:hover { border-color: rgba(46,125,50,.45); box-shadow: 0 8px 20px rgba(1
 .site-footer .powered-by { font-size: .9rem; color: var(--ac-muted); }
 body.dark .ac-hl, body.dark .ac-cc { background: #1c2127; border-color: #2a3038; }
 body.dark .ac-cc b, body.dark .home-section .section-heading h1 { color: #e5e7eb; }
+
+/* ---------- connected-dots background ---------- */
+#ac-net { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+body > *:not(#ac-net):not(.figzoom):not(#navbar-main):not(.search-results):not(.modal) { position: relative; z-index: 1; }
+#navbar-main { z-index: 1030; }
+.home-section, #research, #talks, #teaching, #publications, #contact, #about { background: transparent !important; }
+#research, #talks, #teaching { background: rgba(246, 248, 247, .55) !important; }
+.pp-hero { background: linear-gradient(180deg, rgba(244,248,244,.75) 0%, rgba(255,255,255,.4) 100%) !important; }
+.pp-sec.alt { background: rgba(246, 248, 247, .6) !important; }
+/* keep reading areas crisp */
+.rc-card, #talks .media.stream-item, .ac-hl, .ac-cc, .pub-thumb, .pp-fig img { background-color: #fff; }
+.pub-list-item:hover { background: rgba(246,250,246,.9) !important; }
+body.dark #ac-net { opacity: .5; }
