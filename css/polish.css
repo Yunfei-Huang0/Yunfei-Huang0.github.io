@@ -249,3 +249,18 @@ body.dark #ac-panel { background: #161a1f; box-shadow: 0 0 40px rgba(0,0,0,.4); 
 .pub .pub-row-heading { font-weight: 600; color: var(--ac-ink); }
 /* profile page lists */
 .ul-interests:not(#about .ul-interests) { padding-left: 1.1rem; }
+
+/* ---------- homepage Talks as a timeline (same as the Talks page) ---------- */
+#talks .media.stream-item { background: transparent !important; border: 0 !important; border-left: 2px solid #e6e9ec !important;
+  border-radius: 0 !important; box-shadow: none !important; padding: .4rem 0 1.4rem 1.6rem !important; margin: 0 !important; position: relative; transform: none !important; }
+#talks .media.stream-item::before { content: ""; position: absolute; left: -7px; top: .75rem; width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; border: 2px solid var(--ac-green); }
+#talks .media.stream-item:hover { box-shadow: none !important; }
+#talks .media.stream-item:hover::before { background: var(--ac-green); }
+#talks .article-title { font-size: 1.15rem !important; line-height: 1.4; }
+#talks .article-title a { color: var(--ac-ink) !important; }
+#talks .article-title a[href]:hover { color: var(--ac-green) !important; }
+#talks .article-style { font-size: .95rem !important; }
+#talks .stream-meta { font-size: .85rem; }
+#talks .btn-links { margin-top: .4rem; }
+body.dark #talks .media.stream-item::before { background: #161a1f; }
