@@ -293,3 +293,12 @@ body.dark #talks .media.stream-item::before { background: #161a1f; }
 #contact .ac-cc-static { grid-column: span 3; }
 @media (max-width: 991px) { #contact .ac-contact { grid-template-columns: repeat(2, 1fr); } #contact .ac-cc-static { grid-column: span 2; } }
 @media (max-width: 640px) { #contact .ac-contact { grid-template-columns: 1fr; } #contact .ac-cc-static { grid-column: auto; } }
+
+/* comfortable, centred margins inside the white column */
+@media (min-width: 1200px) {
+  .home-section > .container, .site-footer, body > .container, .universal-wrapper, .article-container { max-width: 1120px !important; }
+  #navbar-main > .container { max-width: 1120px !important; }
+}
+#about .row > [class*="col-"] { padding-left: 15px; padding-right: 15px; }
+#about .row { margin-left: -15px; margin-right: -15px; }
+#profile { text-align: center; }
