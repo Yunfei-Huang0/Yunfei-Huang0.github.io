@@ -284,3 +284,12 @@ body.dark #talks .media.stream-item::before { background: #161a1f; }
   #talks .sec-full .talks-list .col-lg-2 { flex: 0 0 64px; max-width: 64px; padding-right: 0; }
   #talks .sec-full .talks-list .col-lg-2 h3 { font-size: 1.15rem; }
 }
+
+/* Teaching & Contact laid out like Research */
+#teaching .rc-head, #contact .rc-head { margin-bottom: 1.6rem; }
+#teaching .rc-intro, #contact .rc-intro { color: #4b5563; font-size: 1.1rem; line-height: 1.75; margin-top: 1rem; max-width: 900px; }
+#teaching .ac-teach { max-width: 900px; }
+#contact .ac-contact { grid-template-columns: repeat(3, 1fr); }
+#contact .ac-cc-static { grid-column: span 3; }
+@media (max-width: 991px) { #contact .ac-contact { grid-template-columns: repeat(2, 1fr); } #contact .ac-cc-static { grid-column: span 2; } }
+@media (max-width: 640px) { #contact .ac-contact { grid-template-columns: 1fr; } #contact .ac-cc-static { grid-column: auto; } }
