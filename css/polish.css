@@ -322,3 +322,7 @@ body.dark #talks .media.stream-item::before { background: #161a1f; }
 @media (min-width: 1261px) { #navbar-main { border-bottom: 0 !important; } }
 body.dark .home-section + .home-section::before, body.dark .pp-sec + .pp-sec::before, body.dark .site-footer::before { background: #2a3038; }
 body.dark #navbar-main { border-color: #2a3038 !important; box-shadow: none !important; }
+/* divider before every section after the first (robust to <style>/<script> between sections) */
+.home-section ~ .home-section::before { content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: min(1120px, calc(100% - 40px)); height: 1px; background: #eef0f2; }
+body.dark .home-section ~ .home-section::before { background: #2a3038; }
